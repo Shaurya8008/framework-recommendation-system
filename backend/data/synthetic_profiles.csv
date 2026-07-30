@@ -1,0 +1,601 @@
+organization_name,industry,size,region,energy_use_level,emissions_maturity,certifications,disclosure_level,goals,certifications_str,goals_str,target_stage,target_framework_slug,target_score
+Synthetic Org #1,energy,1-50,apac,high,none,[],none,[],,,measure,ghg-protocol,99
+Synthetic Org #2,financial,1-50,india,very-high,none,[],none,['sbti'],,sbti,improve,sbti,92
+Synthetic Org #3,financial,5000+,global,moderate,advanced,"['iso-14064', 'iso-14001', 'iso-50001']",full,"['sdg', 'net-zero', 'renewables']","iso-14064,iso-14001,iso-50001","sdg,net-zero,renewables",improve,sbti,90
+Synthetic Org #4,consumer-goods,250-1000,na,moderate,none,[],partial,[],,,measure,ghg-protocol,95
+Synthetic Org #5,consumer-goods,1-50,na,high,advanced,[],partial,"['stakeholder-trust', 'net-zero']",,"stakeholder-trust,net-zero",improve,sbti,94
+Synthetic Org #6,consumer-goods,1-50,india,high,advanced,['iso-50001'],full,[],iso-50001,,report,brsr,92
+Synthetic Org #7,manufacturing,50-250,latam,high,none,[],none,"['sdg', 'renewables']",,"sdg,renewables",measure,ghg-protocol,95
+Synthetic Org #8,technology,50-250,na,high,none,['iso-14001'],full,"['sbti', 'stakeholder-trust', 'net-zero']",iso-14001,"sbti,stakeholder-trust,net-zero",measure,ghg-protocol,97
+Synthetic Org #9,agriculture,1000-5000,na,moderate,advanced,[],partial,['net-zero'],,net-zero,improve,sbti,95
+Synthetic Org #10,technology,1000-5000,na,low,none,"['iso-45001', 'iso-14001', 'iso-50001']",full,"['renewables', 'sbti']","iso-45001,iso-14001,iso-50001","renewables,sbti",improve,sbti,99
+Synthetic Org #11,transport,50-250,eu,high,advanced,['iso-14064'],full,['sbti'],iso-14064,sbti,improve,sbti,94
+Synthetic Org #12,chemicals,5000+,uk,low,none,[],none,['renewables'],,renewables,measure,ghg-protocol,99
+Synthetic Org #13,healthcare,1-50,uk,very-high,advanced,"['iso-45001', 'iso-14064']",partial,[],"iso-45001,iso-14064",,improve,renewable-energy-plan,78
+Synthetic Org #14,energy,5000+,latam,high,advanced,[],partial,['renewables'],,renewables,manage,iso-50001,96
+Synthetic Org #15,chemicals,1000-5000,global,high,advanced,"['iso-14001', 'iso-45001']",none,['stakeholder-trust'],"iso-14001,iso-45001",stakeholder-trust,manage,iso-50001,87
+Synthetic Org #16,healthcare,50-250,eu,high,none,"['iso-14001', 'iso-45001']",full,['renewables'],"iso-14001,iso-45001",renewables,measure,ghg-protocol,99
+Synthetic Org #17,manufacturing,1-50,na,high,none,[],none,"['net-zero', 'stakeholder-trust', 'sdg']",,"net-zero,stakeholder-trust,sdg",measure,ghg-protocol,98
+Synthetic Org #18,agriculture,1-50,latam,moderate,none,['iso-50001'],full,['stakeholder-trust'],iso-50001,stakeholder-trust,measure,ghg-protocol,97
+Synthetic Org #19,healthcare,1000-5000,eu,moderate,advanced,['iso-45001'],partial,"['stakeholder-trust', 'renewables']",iso-45001,"stakeholder-trust,renewables",report,csrd,95
+Synthetic Org #20,energy,50-250,eu,low,basic,"['iso-50001', 'iso-45001']",none,['net-zero'],"iso-50001,iso-45001",net-zero,improve,sbti,96
+Synthetic Org #21,energy,1-50,eu,low,none,[],partial,"['sbti', 'sdg', 'renewables']",,"sbti,sdg,renewables",measure,ghg-protocol,99
+Synthetic Org #22,agriculture,50-250,india,moderate,advanced,"['iso-14064', 'iso-14001']",full,"['renewables', 'sbti']","iso-14064,iso-14001","renewables,sbti",improve,sbti,92
+Synthetic Org #23,energy,1-50,apac,very-high,basic,['iso-14064'],partial,[],iso-14064,,manage,iso-14001,88
+Synthetic Org #24,energy,1-50,uk,high,none,[],none,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,97
+Synthetic Org #25,agriculture,50-250,uk,moderate,basic,[],partial,[],,,measure,ghg-protocol,94
+Synthetic Org #26,agriculture,5000+,global,low,advanced,[],full,[],,,report,issb,82
+Synthetic Org #27,construction,50-250,uk,very-high,basic,['iso-14001'],none,['renewables'],iso-14001,renewables,measure,ghg-protocol,88
+Synthetic Org #28,manufacturing,1000-5000,na,very-high,basic,"['iso-14064', 'iso-14001', 'iso-45001']",partial,['sbti'],"iso-14064,iso-14001,iso-45001",sbti,improve,sbti,90
+Synthetic Org #29,manufacturing,5000+,apac,low,advanced,[],partial,[],,,manage,iso-14001,89
+Synthetic Org #30,healthcare,1000-5000,india,moderate,none,[],full,['net-zero'],,net-zero,measure,ghg-protocol,98
+Synthetic Org #31,healthcare,1-50,apac,moderate,basic,"['iso-50001', 'iso-45001']",none,"['net-zero', 'stakeholder-trust', 'sbti']","iso-50001,iso-45001","net-zero,stakeholder-trust,sbti",improve,sbti,94
+Synthetic Org #32,healthcare,5000+,india,high,basic,"['iso-45001', 'iso-14001', 'iso-50001']",none,"['sbti', 'sdg']","iso-45001,iso-14001,iso-50001","sbti,sdg",improve,sbti,94
+Synthetic Org #33,agriculture,250-1000,latam,low,none,"['iso-14001', 'iso-14064']",partial,"['sbti', 'sdg', 'net-zero']","iso-14001,iso-14064","sbti,sdg,net-zero",measure,ghg-protocol,98
+Synthetic Org #34,technology,1-50,eu,high,basic,['iso-45001'],none,"['stakeholder-trust', 'net-zero', 'sdg']",iso-45001,"stakeholder-trust,net-zero,sdg",improve,sbti,97
+Synthetic Org #35,financial,250-1000,apac,low,none,[],partial,[],,,measure,ghg-protocol,95
+Synthetic Org #36,financial,50-250,na,high,advanced,"['iso-45001', 'iso-14001', 'iso-50001']",none,"['renewables', 'sdg', 'net-zero']","iso-45001,iso-14001,iso-50001","renewables,sdg,net-zero",improve,sbti,95
+Synthetic Org #37,energy,1000-5000,latam,high,none,['iso-50001'],none,['sbti'],iso-50001,sbti,measure,ghg-protocol,99
+Synthetic Org #38,agriculture,5000+,apac,very-high,advanced,[],none,[],,,report,issb,83
+Synthetic Org #39,chemicals,5000+,global,high,advanced,[],full,"['sbti', 'net-zero']",,"sbti,net-zero",improve,sbti,92
+Synthetic Org #40,transport,250-1000,latam,low,basic,"['iso-50001', 'iso-45001', 'iso-14001']",none,['stakeholder-trust'],"iso-50001,iso-45001,iso-14001",stakeholder-trust,measure,ghg-protocol,88
+Synthetic Org #41,consumer-goods,5000+,apac,moderate,none,[],none,"['net-zero', 'sbti']",,"net-zero,sbti",improve,sbti,93
+Synthetic Org #42,technology,1000-5000,latam,moderate,basic,"['iso-14001', 'iso-50001', 'iso-14064']",none,"['sbti', 'stakeholder-trust']","iso-14001,iso-50001,iso-14064","sbti,stakeholder-trust",measure,ghg-protocol,88
+Synthetic Org #43,agriculture,250-1000,na,moderate,none,"['iso-50001', 'iso-14064', 'iso-45001']",none,['net-zero'],"iso-50001,iso-14064,iso-45001",net-zero,measure,ghg-protocol,94
+Synthetic Org #44,transport,250-1000,apac,very-high,advanced,['iso-14001'],full,[],iso-14001,,manage,iso-50001,85
+Synthetic Org #45,transport,50-250,india,high,none,"['iso-14064', 'iso-50001']",none,['renewables'],"iso-14064,iso-50001",renewables,measure,ghg-protocol,99
+Synthetic Org #46,healthcare,5000+,global,very-high,advanced,['iso-14001'],none,"['net-zero', 'sbti']",iso-14001,"net-zero,sbti",improve,sbti,95
+Synthetic Org #47,technology,1000-5000,global,high,advanced,"['iso-14001', 'iso-45001', 'iso-50001']",partial,"['sdg', 'renewables', 'sbti']","iso-14001,iso-45001,iso-50001","sdg,renewables,sbti",improve,sbti,92
+Synthetic Org #48,consumer-goods,250-1000,india,moderate,none,"['iso-14064', 'iso-45001', 'iso-14001']",partial,"['stakeholder-trust', 'sdg', 'sbti']","iso-14064,iso-45001,iso-14001","stakeholder-trust,sdg,sbti",measure,ghg-protocol,99
+Synthetic Org #49,financial,1-50,na,high,none,"['iso-45001', 'iso-50001']",partial,"['renewables', 'sbti']","iso-45001,iso-50001","renewables,sbti",improve,sbti,95
+Synthetic Org #50,financial,1000-5000,latam,moderate,advanced,['iso-45001'],none,[],iso-45001,,report,issb,83
+Synthetic Org #51,construction,250-1000,eu,moderate,none,[],none,['renewables'],,renewables,report,csrd,96
+Synthetic Org #52,healthcare,1-50,uk,very-high,advanced,[],full,"['renewables', 'stakeholder-trust']",,"renewables,stakeholder-trust",report,gri,85
+Synthetic Org #53,construction,50-250,apac,low,none,[],partial,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,97
+Synthetic Org #54,agriculture,1-50,india,moderate,none,[],partial,"['stakeholder-trust', 'sdg']",,"stakeholder-trust,sdg",measure,ghg-protocol,94
+Synthetic Org #55,agriculture,5000+,latam,very-high,advanced,[],partial,"['renewables', 'sdg']",,"renewables,sdg",report,issb,80
+Synthetic Org #56,construction,250-1000,latam,very-high,advanced,['iso-14064'],none,[],iso-14064,,manage,iso-14001,93
+Synthetic Org #57,transport,50-250,na,high,basic,[],full,['sbti'],,sbti,improve,sbti,96
+Synthetic Org #58,construction,1000-5000,apac,moderate,advanced,[],none,"['renewables', 'sdg']",,"renewables,sdg",manage,iso-14001,92
+Synthetic Org #59,financial,1000-5000,uk,low,none,['iso-14001'],partial,"['renewables', 'stakeholder-trust', 'net-zero']",iso-14001,"renewables,stakeholder-trust,net-zero",measure,ghg-protocol,99
+Synthetic Org #60,technology,250-1000,latam,very-high,basic,"['iso-50001', 'iso-14064', 'iso-14001']",full,['renewables'],"iso-50001,iso-14064,iso-14001",renewables,measure,ghg-protocol,86
+Synthetic Org #61,agriculture,1-50,uk,high,advanced,['iso-50001'],full,"['sbti', 'net-zero']",iso-50001,"sbti,net-zero",improve,sbti,97
+Synthetic Org #62,consumer-goods,5000+,india,low,none,['iso-50001'],full,"['sbti', 'net-zero']",iso-50001,"sbti,net-zero",measure,ghg-protocol,98
+Synthetic Org #63,transport,1000-5000,na,moderate,basic,['iso-14064'],partial,['renewables'],iso-14064,renewables,manage,iso-14001,90
+Synthetic Org #64,transport,1-50,uk,low,advanced,[],full,['sbti'],,sbti,improve,sbti,96
+Synthetic Org #65,energy,1-50,latam,low,none,[],none,"['sbti', 'stakeholder-trust', 'net-zero']",,"sbti,stakeholder-trust,net-zero",measure,ghg-protocol,96
+Synthetic Org #66,agriculture,1-50,india,moderate,basic,['iso-45001'],full,['stakeholder-trust'],iso-45001,stakeholder-trust,report,brsr,94
+Synthetic Org #67,healthcare,1-50,latam,moderate,basic,"['iso-14001', 'iso-50001']",none,"['renewables', 'stakeholder-trust', 'sdg']","iso-14001,iso-50001","renewables,stakeholder-trust,sdg",measure,ghg-protocol,87
+Synthetic Org #68,construction,1-50,india,moderate,none,['iso-14001'],full,"['net-zero', 'sdg', 'renewables']",iso-14001,"net-zero,sdg,renewables",improve,sbti,95
+Synthetic Org #69,consumer-goods,250-1000,global,high,none,['iso-14001'],partial,"['sdg', 'renewables']",iso-14001,"sdg,renewables",measure,ghg-protocol,96
+Synthetic Org #70,chemicals,1000-5000,eu,high,advanced,['iso-14064'],full,"['stakeholder-trust', 'sdg']",iso-14064,"stakeholder-trust,sdg",report,csrd,95
+Synthetic Org #71,technology,50-250,latam,low,basic,[],partial,"['stakeholder-trust', 'renewables']",,"stakeholder-trust,renewables",measure,ghg-protocol,85
+Synthetic Org #72,technology,1-50,uk,high,none,[],partial,['sdg'],,sdg,measure,ghg-protocol,98
+Synthetic Org #73,technology,250-1000,india,high,advanced,"['iso-50001', 'iso-14001']",none,['renewables'],"iso-50001,iso-14001",renewables,report,brsr,97
+Synthetic Org #74,agriculture,5000+,latam,moderate,advanced,"['iso-14064', 'iso-50001', 'iso-14001']",partial,[],"iso-14064,iso-50001,iso-14001",,report,issb,81
+Synthetic Org #75,transport,50-250,uk,moderate,basic,"['iso-45001', 'iso-50001']",full,"['stakeholder-trust', 'sdg', 'sbti']","iso-45001,iso-50001","stakeholder-trust,sdg,sbti",improve,sbti,94
+Synthetic Org #76,financial,250-1000,na,very-high,basic,['iso-50001'],partial,[],iso-50001,,measure,ghg-protocol,90
+Synthetic Org #77,construction,250-1000,global,moderate,none,"['iso-14064', 'iso-50001', 'iso-45001']",none,[],"iso-14064,iso-50001,iso-45001",,measure,ghg-protocol,99
+Synthetic Org #78,construction,250-1000,eu,high,none,[],partial,"['sbti', 'sdg', 'net-zero']",,"sbti,sdg,net-zero",measure,ghg-protocol,99
+Synthetic Org #79,manufacturing,5000+,na,moderate,advanced,[],partial,[],,,manage,iso-14001,92
+Synthetic Org #80,healthcare,250-1000,uk,very-high,basic,[],partial,[],,,measure,ghg-protocol,85
+Synthetic Org #81,transport,1000-5000,global,low,basic,[],partial,"['net-zero', 'sbti', 'stakeholder-trust']",,"net-zero,sbti,stakeholder-trust",improve,sbti,94
+Synthetic Org #82,healthcare,250-1000,global,moderate,none,['iso-50001'],full,"['renewables', 'stakeholder-trust', 'sbti']",iso-50001,"renewables,stakeholder-trust,sbti",improve,sbti,97
+Synthetic Org #83,transport,5000+,uk,high,advanced,[],full,"['net-zero', 'sbti', 'sdg']",,"net-zero,sbti,sdg",manage,iso-14001,95
+Synthetic Org #84,construction,250-1000,apac,low,none,[],none,"['net-zero', 'sbti', 'stakeholder-trust']",,"net-zero,sbti,stakeholder-trust",measure,ghg-protocol,99
+Synthetic Org #85,consumer-goods,1000-5000,apac,very-high,basic,[],none,['sdg'],,sdg,measure,ghg-protocol,91
+Synthetic Org #86,agriculture,1-50,apac,moderate,basic,"['iso-50001', 'iso-14064']",full,[],"iso-50001,iso-14064",,measure,ghg-protocol,85
+Synthetic Org #87,financial,50-250,apac,moderate,basic,[],none,[],,,measure,ghg-protocol,93
+Synthetic Org #88,chemicals,250-1000,india,high,basic,['iso-45001'],none,"['sdg', 'renewables']",iso-45001,"sdg,renewables",report,brsr,92
+Synthetic Org #89,agriculture,1-50,india,low,basic,['iso-45001'],full,[],iso-45001,,report,brsr,91
+Synthetic Org #90,energy,50-250,apac,low,advanced,"['iso-14001', 'iso-14064']",partial,"['stakeholder-trust', 'renewables']","iso-14001,iso-14064","stakeholder-trust,renewables",report,tcfd,73
+Synthetic Org #91,transport,50-250,india,very-high,advanced,[],partial,"['sdg', 'renewables']",,"sdg,renewables",report,brsr,90
+Synthetic Org #92,technology,250-1000,apac,low,none,['iso-14064'],partial,['renewables'],iso-14064,renewables,measure,ghg-protocol,98
+Synthetic Org #93,financial,1-50,uk,low,basic,['iso-14001'],partial,"['stakeholder-trust', 'net-zero']",iso-14001,"stakeholder-trust,net-zero",improve,sbti,95
+Synthetic Org #94,financial,1000-5000,uk,low,none,['iso-14064'],full,"['net-zero', 'sbti']",iso-14064,"net-zero,sbti",measure,ghg-protocol,99
+Synthetic Org #95,transport,5000+,eu,high,basic,['iso-14001'],full,[],iso-14001,,measure,ghg-protocol,91
+Synthetic Org #96,healthcare,50-250,apac,moderate,basic,[],full,"['renewables', 'net-zero', 'stakeholder-trust']",,"renewables,net-zero,stakeholder-trust",improve,sbti,95
+Synthetic Org #97,energy,1000-5000,global,moderate,basic,['iso-45001'],full,"['renewables', 'stakeholder-trust']",iso-45001,"renewables,stakeholder-trust",manage,iso-14001,93
+Synthetic Org #98,construction,1000-5000,india,moderate,basic,"['iso-50001', 'iso-14001']",none,['renewables'],"iso-50001,iso-14001",renewables,measure,ghg-protocol,89
+Synthetic Org #99,technology,5000+,na,low,basic,['iso-14064'],full,['renewables'],iso-14064,renewables,measure,ghg-protocol,84
+Synthetic Org #100,financial,1000-5000,na,high,advanced,['iso-14064'],full,['sbti'],iso-14064,sbti,improve,sbti,96
+Synthetic Org #101,construction,5000+,uk,moderate,basic,['iso-14064'],none,"['renewables', 'sbti']",iso-14064,"renewables,sbti",improve,sbti,97
+Synthetic Org #102,agriculture,1-50,eu,high,none,[],partial,"['renewables', 'net-zero', 'sdg']",,"renewables,net-zero,sdg",measure,ghg-protocol,99
+Synthetic Org #103,chemicals,1000-5000,latam,moderate,none,['iso-45001'],partial,"['renewables', 'net-zero', 'sbti']",iso-45001,"renewables,net-zero,sbti",measure,ghg-protocol,95
+Synthetic Org #104,financial,1000-5000,na,very-high,advanced,"['iso-14001', 'iso-14064']",none,['sbti'],"iso-14001,iso-14064",sbti,improve,sbti,98
+Synthetic Org #105,energy,1000-5000,global,low,basic,"['iso-45001', 'iso-14001', 'iso-14064']",none,['net-zero'],"iso-45001,iso-14001,iso-14064",net-zero,improve,sbti,98
+Synthetic Org #106,transport,250-1000,na,very-high,none,"['iso-14064', 'iso-45001']",none,['sbti'],"iso-14064,iso-45001",sbti,measure,ghg-protocol,97
+Synthetic Org #107,chemicals,1-50,india,very-high,advanced,[],full,"['stakeholder-trust', 'sbti']",,"stakeholder-trust,sbti",improve,sbti,94
+Synthetic Org #108,construction,1000-5000,apac,high,basic,"['iso-14001', 'iso-50001', 'iso-45001']",partial,"['sbti', 'net-zero', 'stakeholder-trust']","iso-14001,iso-50001,iso-45001","sbti,net-zero,stakeholder-trust",improve,sbti,91
+Synthetic Org #109,technology,5000+,na,very-high,advanced,['iso-45001'],partial,['renewables'],iso-45001,renewables,improve,renewable-energy-plan,79
+Synthetic Org #110,agriculture,1-50,eu,very-high,advanced,"['iso-45001', 'iso-14064']",partial,['net-zero'],"iso-45001,iso-14064",net-zero,improve,sbti,94
+Synthetic Org #111,consumer-goods,250-1000,global,low,advanced,['iso-45001'],full,['stakeholder-trust'],iso-45001,stakeholder-trust,report,gri,85
+Synthetic Org #112,technology,50-250,apac,moderate,advanced,"['iso-50001', 'iso-45001', 'iso-14001']",partial,[],"iso-50001,iso-45001,iso-14001",,report,tcfd,73
+Synthetic Org #113,transport,1000-5000,global,high,advanced,[],none,['sdg'],,sdg,manage,iso-14001,91
+Synthetic Org #114,consumer-goods,50-250,eu,moderate,advanced,"['iso-45001', 'iso-14001']",partial,['renewables'],"iso-45001,iso-14001",renewables,report,csrd,86
+Synthetic Org #115,transport,250-1000,latam,low,basic,[],none,['renewables'],,renewables,measure,ghg-protocol,92
+Synthetic Org #116,financial,250-1000,global,very-high,none,"['iso-14001', 'iso-50001']",partial,['sdg'],"iso-14001,iso-50001",sdg,measure,ghg-protocol,96
+Synthetic Org #117,healthcare,1000-5000,latam,high,none,[],full,"['net-zero', 'sdg']",,"net-zero,sdg",measure,ghg-protocol,97
+Synthetic Org #118,healthcare,50-250,apac,low,advanced,"['iso-45001', 'iso-14064', 'iso-50001']",partial,[],"iso-45001,iso-14064,iso-50001",,measure,ghg-protocol,74
+Synthetic Org #119,chemicals,1-50,global,high,basic,[],none,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,88
+Synthetic Org #120,chemicals,1000-5000,uk,high,advanced,"['iso-14064', 'iso-45001', 'iso-14001']",full,"['net-zero', 'renewables']","iso-14064,iso-45001,iso-14001","net-zero,renewables",improve,sbti,92
+Synthetic Org #121,healthcare,1000-5000,na,low,advanced,[],partial,"['renewables', 'sbti']",,"renewables,sbti",improve,sbti,93
+Synthetic Org #122,technology,1-50,apac,high,advanced,['iso-14001'],full,"['sdg', 'sbti']",iso-14001,"sdg,sbti",improve,sbti,97
+Synthetic Org #123,energy,1000-5000,global,moderate,advanced,"['iso-14001', 'iso-14064']",full,['sbti'],"iso-14001,iso-14064",sbti,improve,sbti,96
+Synthetic Org #124,chemicals,5000+,eu,low,advanced,"['iso-50001', 'iso-14001']",none,['sbti'],"iso-50001,iso-14001",sbti,report,csrd,95
+Synthetic Org #125,healthcare,1-50,na,moderate,none,['iso-50001'],full,[],iso-50001,,measure,ghg-protocol,98
+Synthetic Org #126,manufacturing,50-250,global,high,none,['iso-14001'],full,['sdg'],iso-14001,sdg,measure,ghg-protocol,95
+Synthetic Org #127,manufacturing,50-250,apac,very-high,advanced,"['iso-14001', 'iso-50001', 'iso-45001']",none,['stakeholder-trust'],"iso-14001,iso-50001,iso-45001",stakeholder-trust,report,tcfd,73
+Synthetic Org #128,healthcare,1-50,uk,moderate,advanced,"['iso-45001', 'iso-50001', 'iso-14001']",none,[],"iso-45001,iso-50001,iso-14001",,measure,ghg-protocol,78
+Synthetic Org #129,agriculture,1000-5000,uk,low,basic,['iso-14001'],full,[],iso-14001,,measure,ghg-protocol,85
+Synthetic Org #130,technology,5000+,eu,low,none,"['iso-45001', 'iso-50001']",partial,"['stakeholder-trust', 'sdg', 'sbti']","iso-45001,iso-50001","stakeholder-trust,sdg,sbti",improve,sbti,96
+Synthetic Org #131,financial,5000+,uk,low,advanced,"['iso-50001', 'iso-14064', 'iso-45001']",none,['renewables'],"iso-50001,iso-14064,iso-45001",renewables,report,issb,82
+Synthetic Org #132,technology,1000-5000,uk,very-high,advanced,['iso-14064'],none,['sdg'],iso-14064,sdg,report,issb,85
+Synthetic Org #133,technology,50-250,apac,very-high,none,[],none,[],,,measure,ghg-protocol,94
+Synthetic Org #134,consumer-goods,1-50,apac,high,none,[],full,"['stakeholder-trust', 'sdg', 'renewables']",,"stakeholder-trust,sdg,renewables",measure,ghg-protocol,96
+Synthetic Org #135,energy,1000-5000,na,very-high,advanced,['iso-45001'],none,['net-zero'],iso-45001,net-zero,improve,sbti,93
+Synthetic Org #136,healthcare,5000+,eu,moderate,advanced,[],partial,[],,,report,csrd,91
+Synthetic Org #137,technology,5000+,na,low,basic,[],full,"['stakeholder-trust', 'net-zero']",,"stakeholder-trust,net-zero",improve,sbti,93
+Synthetic Org #138,healthcare,250-1000,global,moderate,basic,['iso-45001'],full,['net-zero'],iso-45001,net-zero,improve,sbti,91
+Synthetic Org #139,chemicals,50-250,india,very-high,none,"['iso-14001', 'iso-14064', 'iso-45001']",none,"['renewables', 'stakeholder-trust']","iso-14001,iso-14064,iso-45001","renewables,stakeholder-trust",measure,ghg-protocol,98
+Synthetic Org #140,technology,50-250,na,high,advanced,"['iso-14001', 'iso-14064']",partial,['sbti'],"iso-14001,iso-14064",sbti,improve,sbti,94
+Synthetic Org #141,healthcare,1-50,apac,low,basic,"['iso-14064', 'iso-50001', 'iso-45001']",partial,"['sdg', 'sbti']","iso-14064,iso-50001,iso-45001","sdg,sbti",improve,sbti,90
+Synthetic Org #142,financial,1-50,na,very-high,none,"['iso-14064', 'iso-45001', 'iso-50001']",partial,[],"iso-14064,iso-45001,iso-50001",,measure,ghg-protocol,97
+Synthetic Org #143,construction,1000-5000,india,low,none,['iso-50001'],none,['sdg'],iso-50001,sdg,measure,ghg-protocol,93
+Synthetic Org #144,transport,250-1000,global,low,basic,['iso-50001'],full,['renewables'],iso-50001,renewables,measure,ghg-protocol,91
+Synthetic Org #145,financial,50-250,india,high,none,"['iso-14001', 'iso-50001', 'iso-14064']",partial,"['net-zero', 'sdg']","iso-14001,iso-50001,iso-14064","net-zero,sdg",improve,sbti,97
+Synthetic Org #146,healthcare,1000-5000,india,very-high,advanced,['iso-45001'],full,[],iso-45001,,report,brsr,93
+Synthetic Org #147,consumer-goods,1-50,na,moderate,advanced,"['iso-45001', 'iso-14001', 'iso-50001']",partial,[],"iso-45001,iso-14001,iso-50001",,report,tcfd,73
+Synthetic Org #148,construction,1000-5000,india,very-high,advanced,['iso-45001'],none,['sbti'],iso-45001,sbti,manage,iso-14001,93
+Synthetic Org #149,technology,50-250,global,low,advanced,[],full,['sdg'],,sdg,report,gri,81
+Synthetic Org #150,chemicals,50-250,global,moderate,basic,[],none,"['sbti', 'net-zero', 'renewables']",,"sbti,net-zero,renewables",improve,sbti,91
+Synthetic Org #151,agriculture,1000-5000,latam,very-high,advanced,"['iso-45001', 'iso-14064', 'iso-50001']",full,['renewables'],"iso-45001,iso-14064,iso-50001",renewables,report,issb,84
+Synthetic Org #152,energy,1000-5000,uk,high,basic,[],full,['stakeholder-trust'],,stakeholder-trust,manage,iso-14001,93
+Synthetic Org #153,energy,250-1000,uk,very-high,none,['iso-45001'],none,[],iso-45001,,measure,ghg-protocol,95
+Synthetic Org #154,energy,5000+,india,very-high,basic,"['iso-14001', 'iso-50001']",full,"['sbti', 'sdg', 'renewables']","iso-14001,iso-50001","sbti,sdg,renewables",improve,sbti,94
+Synthetic Org #155,agriculture,5000+,eu,low,basic,['iso-14001'],none,"['sbti', 'net-zero', 'renewables']",iso-14001,"sbti,net-zero,renewables",improve,sbti,93
+Synthetic Org #156,agriculture,1000-5000,india,moderate,basic,['iso-14064'],partial,"['sdg', 'net-zero']",iso-14064,"sdg,net-zero",improve,sbti,93
+Synthetic Org #157,technology,1-50,na,low,advanced,['iso-45001'],full,['stakeholder-trust'],iso-45001,stakeholder-trust,report,tcfd,83
+Synthetic Org #158,chemicals,250-1000,global,moderate,basic,"['iso-14064', 'iso-14001', 'iso-45001']",partial,['stakeholder-trust'],"iso-14064,iso-14001,iso-45001",stakeholder-trust,measure,ghg-protocol,89
+Synthetic Org #159,consumer-goods,250-1000,latam,moderate,advanced,"['iso-14001', 'iso-45001', 'iso-50001']",full,"['sdg', 'net-zero', 'sbti']","iso-14001,iso-45001,iso-50001","sdg,net-zero,sbti",improve,sbti,92
+Synthetic Org #160,transport,50-250,eu,high,basic,[],none,['sbti'],,sbti,report,csrd,98
+Synthetic Org #161,energy,250-1000,latam,low,advanced,"['iso-14001', 'iso-45001', 'iso-50001']",full,"['sbti', 'renewables', 'net-zero']","iso-14001,iso-45001,iso-50001","sbti,renewables,net-zero",improve,sbti,93
+Synthetic Org #162,chemicals,50-250,latam,moderate,advanced,[],partial,"['sdg', 'sbti']",,"sdg,sbti",improve,sbti,92
+Synthetic Org #163,agriculture,5000+,na,very-high,none,[],full,['renewables'],,renewables,measure,ghg-protocol,89
+Synthetic Org #164,construction,250-1000,apac,very-high,basic,['iso-14064'],partial,['sbti'],iso-14064,sbti,improve,sbti,96
+Synthetic Org #165,healthcare,50-250,latam,high,none,['iso-45001'],full,"['net-zero', 'stakeholder-trust', 'sbti']",iso-45001,"net-zero,stakeholder-trust,sbti",measure,ghg-protocol,98
+Synthetic Org #166,energy,50-250,na,very-high,advanced,['iso-14001'],none,['renewables'],iso-14001,renewables,manage,iso-50001,83
+Synthetic Org #167,technology,1-50,uk,low,basic,['iso-50001'],full,"['net-zero', 'sdg']",iso-50001,"net-zero,sdg",improve,sbti,96
+Synthetic Org #168,construction,1-50,na,low,advanced,['iso-50001'],full,['net-zero'],iso-50001,net-zero,improve,sbti,95
+Synthetic Org #169,transport,1000-5000,apac,moderate,advanced,['iso-14001'],partial,[],iso-14001,,report,issb,86
+Synthetic Org #170,manufacturing,250-1000,eu,moderate,advanced,"['iso-14064', 'iso-14001']",full,['sbti'],"iso-14064,iso-14001",sbti,improve,sbti,96
+Synthetic Org #171,transport,1-50,global,moderate,basic,"['iso-14064', 'iso-14001']",full,[],"iso-14064,iso-14001",,measure,ghg-protocol,92
+Synthetic Org #172,agriculture,5000+,india,low,advanced,"['iso-50001', 'iso-45001']",full,['sdg'],"iso-50001,iso-45001",sdg,report,brsr,89
+Synthetic Org #173,consumer-goods,1-50,india,high,none,['iso-50001'],full,[],iso-50001,,measure,ghg-protocol,95
+Synthetic Org #174,financial,250-1000,global,low,basic,[],partial,"['sdg', 'stakeholder-trust']",,"sdg,stakeholder-trust",measure,ghg-protocol,86
+Synthetic Org #175,manufacturing,250-1000,latam,low,basic,"['iso-14001', 'iso-45001', 'iso-50001']",none,['net-zero'],"iso-14001,iso-45001,iso-50001",net-zero,improve,sbti,96
+Synthetic Org #176,technology,5000+,na,moderate,advanced,"['iso-14064', 'iso-45001', 'iso-14001']",partial,['net-zero'],"iso-14064,iso-45001,iso-14001",net-zero,improve,sbti,99
+Synthetic Org #177,agriculture,1-50,na,moderate,none,[],none,['sdg'],,sdg,measure,ghg-protocol,90
+Synthetic Org #178,financial,1000-5000,latam,very-high,basic,"['iso-50001', 'iso-14064', 'iso-45001']",none,[],"iso-50001,iso-14064,iso-45001",,measure,ghg-protocol,87
+Synthetic Org #179,technology,250-1000,global,high,basic,"['iso-14064', 'iso-50001', 'iso-45001']",partial,['renewables'],"iso-14064,iso-50001,iso-45001",renewables,measure,ghg-protocol,91
+Synthetic Org #180,agriculture,250-1000,latam,high,none,['iso-14001'],full,"['stakeholder-trust', 'sbti']",iso-14001,"stakeholder-trust,sbti",measure,ghg-protocol,93
+Synthetic Org #181,financial,250-1000,na,low,none,"['iso-45001', 'iso-50001', 'iso-14064']",partial,"['renewables', 'sbti', 'sdg']","iso-45001,iso-50001,iso-14064","renewables,sbti,sdg",measure,ghg-protocol,97
+Synthetic Org #182,agriculture,250-1000,uk,low,advanced,"['iso-14064', 'iso-50001']",partial,[],"iso-14064,iso-50001",,report,tcfd,73
+Synthetic Org #183,energy,1000-5000,na,moderate,none,"['iso-14064', 'iso-14001']",none,['net-zero'],"iso-14064,iso-14001",net-zero,measure,ghg-protocol,99
+Synthetic Org #184,construction,250-1000,na,very-high,advanced,"['iso-50001', 'iso-45001']",none,"['sdg', 'stakeholder-trust']","iso-50001,iso-45001","sdg,stakeholder-trust",manage,iso-14001,90
+Synthetic Org #185,agriculture,1-50,india,moderate,advanced,['iso-45001'],partial,['sbti'],iso-45001,sbti,improve,sbti,97
+Synthetic Org #186,energy,1-50,apac,moderate,basic,['iso-14001'],full,['sdg'],iso-14001,sdg,measure,ghg-protocol,85
+Synthetic Org #187,agriculture,50-250,india,high,advanced,[],partial,[],,,report,brsr,87
+Synthetic Org #188,chemicals,1-50,uk,moderate,advanced,[],partial,['sdg'],,sdg,manage,iso-14001,85
+Synthetic Org #189,energy,5000+,india,high,basic,"['iso-50001', 'iso-14064', 'iso-14001']",none,[],"iso-50001,iso-14064,iso-14001",,measure,ghg-protocol,92
+Synthetic Org #190,construction,50-250,eu,very-high,none,"['iso-45001', 'iso-50001']",partial,"['sbti', 'net-zero', 'renewables']","iso-45001,iso-50001","sbti,net-zero,renewables",measure,ghg-protocol,97
+Synthetic Org #191,transport,1000-5000,apac,very-high,advanced,['iso-14001'],partial,['sdg'],iso-14001,sdg,manage,iso-50001,84
+Synthetic Org #192,energy,1000-5000,uk,high,none,"['iso-50001', 'iso-14001', 'iso-14064']",full,"['net-zero', 'stakeholder-trust', 'sdg']","iso-50001,iso-14001,iso-14064","net-zero,stakeholder-trust,sdg",measure,ghg-protocol,95
+Synthetic Org #193,chemicals,250-1000,eu,moderate,basic,[],full,['stakeholder-trust'],,stakeholder-trust,report,csrd,96
+Synthetic Org #194,transport,1-50,na,moderate,advanced,['iso-50001'],full,['stakeholder-trust'],iso-50001,stakeholder-trust,manage,iso-14001,79
+Synthetic Org #195,financial,1-50,india,moderate,advanced,[],full,['stakeholder-trust'],,stakeholder-trust,report,brsr,86
+Synthetic Org #196,healthcare,250-1000,latam,low,none,[],none,"['sdg', 'sbti', 'stakeholder-trust']",,"sdg,sbti,stakeholder-trust",measure,ghg-protocol,95
+Synthetic Org #197,consumer-goods,5000+,apac,low,basic,"['iso-45001', 'iso-14064']",full,['renewables'],"iso-45001,iso-14064",renewables,measure,ghg-protocol,87
+Synthetic Org #198,construction,1000-5000,na,very-high,none,[],full,['renewables'],,renewables,measure,ghg-protocol,91
+Synthetic Org #199,consumer-goods,1000-5000,uk,moderate,basic,[],full,['sdg'],,sdg,measure,ghg-protocol,90
+Synthetic Org #200,technology,1000-5000,eu,high,advanced,[],full,['sbti'],,sbti,report,csrd,99
+Synthetic Org #201,agriculture,1-50,na,very-high,none,[],none,[],,,measure,ghg-protocol,99
+Synthetic Org #202,transport,1000-5000,latam,very-high,none,['iso-45001'],none,['sbti'],iso-45001,sbti,measure,ghg-protocol,98
+Synthetic Org #203,agriculture,5000+,uk,very-high,basic,[],partial,[],,,measure,ghg-protocol,89
+Synthetic Org #204,consumer-goods,5000+,uk,moderate,none,['iso-14001'],full,[],iso-14001,,measure,ghg-protocol,97
+Synthetic Org #205,transport,1000-5000,india,very-high,basic,[],full,[],,,manage,iso-14001,93
+Synthetic Org #206,consumer-goods,50-250,na,high,basic,[],partial,"['net-zero', 'sbti']",,"net-zero,sbti",improve,sbti,98
+Synthetic Org #207,technology,5000+,na,low,basic,['iso-45001'],full,"['stakeholder-trust', 'net-zero', 'renewables']",iso-45001,"stakeholder-trust,net-zero,renewables",improve,sbti,99
+Synthetic Org #208,energy,1000-5000,na,high,advanced,[],partial,['stakeholder-trust'],,stakeholder-trust,manage,iso-14001,97
+Synthetic Org #209,financial,1000-5000,india,low,none,[],none,['renewables'],,renewables,measure,ghg-protocol,91
+Synthetic Org #210,financial,1000-5000,eu,moderate,basic,['iso-50001'],full,"['stakeholder-trust', 'sdg']",iso-50001,"stakeholder-trust,sdg",report,csrd,93
+Synthetic Org #211,healthcare,250-1000,india,very-high,advanced,['iso-14064'],full,[],iso-14064,,report,brsr,90
+Synthetic Org #212,technology,250-1000,apac,low,basic,['iso-14001'],full,"['renewables', 'sdg', 'stakeholder-trust']",iso-14001,"renewables,sdg,stakeholder-trust",measure,ghg-protocol,86
+Synthetic Org #213,healthcare,5000+,eu,low,advanced,[],partial,"['stakeholder-trust', 'renewables', 'net-zero']",,"stakeholder-trust,renewables,net-zero",improve,sbti,95
+Synthetic Org #214,construction,1-50,india,low,none,['iso-45001'],none,"['sbti', 'renewables']",iso-45001,"sbti,renewables",measure,ghg-protocol,95
+Synthetic Org #215,construction,1000-5000,india,very-high,advanced,[],full,['stakeholder-trust'],,stakeholder-trust,report,brsr,90
+Synthetic Org #216,construction,5000+,na,very-high,advanced,['iso-50001'],partial,"['stakeholder-trust', 'sdg']",iso-50001,"stakeholder-trust,sdg",manage,iso-14001,91
+Synthetic Org #217,financial,250-1000,apac,high,advanced,[],partial,['sdg'],,sdg,improve,renewable-energy-plan,76
+Synthetic Org #218,financial,250-1000,eu,high,basic,[],full,"['sdg', 'renewables']",,"sdg,renewables",report,csrd,91
+Synthetic Org #219,technology,5000+,latam,high,basic,"['iso-14064', 'iso-50001']",none,['sbti'],"iso-14064,iso-50001",sbti,improve,sbti,98
+Synthetic Org #220,transport,1-50,na,low,basic,"['iso-45001', 'iso-14064', 'iso-50001']",partial,['sbti'],"iso-45001,iso-14064,iso-50001",sbti,improve,sbti,92
+Synthetic Org #221,financial,250-1000,india,high,none,"['iso-50001', 'iso-14001']",none,[],"iso-50001,iso-14001",,measure,ghg-protocol,99
+Synthetic Org #222,financial,50-250,apac,moderate,none,['iso-45001'],none,"['net-zero', 'sbti']",iso-45001,"net-zero,sbti",measure,ghg-protocol,96
+Synthetic Org #223,manufacturing,5000+,eu,very-high,advanced,['iso-50001'],partial,['sdg'],iso-50001,sdg,report,csrd,93
+Synthetic Org #224,transport,1-50,latam,low,advanced,[],full,"['net-zero', 'sbti', 'renewables']",,"net-zero,sbti,renewables",improve,sbti,99
+Synthetic Org #225,chemicals,1-50,latam,very-high,basic,"['iso-45001', 'iso-14001', 'iso-14064']",none,['stakeholder-trust'],"iso-45001,iso-14001,iso-14064",stakeholder-trust,measure,ghg-protocol,85
+Synthetic Org #226,healthcare,1-50,na,high,basic,"['iso-14064', 'iso-14001']",full,"['renewables', 'sdg', 'net-zero']","iso-14064,iso-14001","renewables,sdg,net-zero",improve,sbti,93
+Synthetic Org #227,energy,250-1000,eu,very-high,advanced,"['iso-50001', 'iso-14001', 'iso-14064']",partial,['stakeholder-trust'],"iso-50001,iso-14001,iso-14064",stakeholder-trust,report,csrd,98
+Synthetic Org #228,construction,50-250,india,very-high,basic,['iso-14001'],full,"['net-zero', 'sbti']",iso-14001,"net-zero,sbti",improve,sbti,92
+Synthetic Org #229,chemicals,1000-5000,na,moderate,none,['iso-50001'],partial,"['sdg', 'stakeholder-trust']",iso-50001,"sdg,stakeholder-trust",measure,ghg-protocol,98
+Synthetic Org #230,transport,5000+,apac,low,basic,['iso-50001'],full,[],iso-50001,,manage,iso-14001,95
+Synthetic Org #231,energy,1000-5000,na,moderate,basic,"['iso-45001', 'iso-14064']",full,[],"iso-45001,iso-14064",,measure,ghg-protocol,92
+Synthetic Org #232,transport,250-1000,india,moderate,none,['iso-50001'],none,"['stakeholder-trust', 'sdg']",iso-50001,"stakeholder-trust,sdg",measure,ghg-protocol,95
+Synthetic Org #233,consumer-goods,5000+,uk,moderate,none,"['iso-14001', 'iso-45001']",full,"['stakeholder-trust', 'sdg']","iso-14001,iso-45001","stakeholder-trust,sdg",measure,ghg-protocol,96
+Synthetic Org #234,energy,5000+,global,low,advanced,[],full,"['stakeholder-trust', 'sbti', 'net-zero']",,"stakeholder-trust,sbti,net-zero",improve,sbti,92
+Synthetic Org #235,technology,5000+,uk,low,advanced,"['iso-14064', 'iso-14001', 'iso-50001']",none,[],"iso-14064,iso-14001,iso-50001",,report,issb,83
+Synthetic Org #236,agriculture,50-250,india,very-high,basic,[],full,"['renewables', 'sdg', 'stakeholder-trust']",,"renewables,sdg,stakeholder-trust",measure,ghg-protocol,90
+Synthetic Org #237,manufacturing,1000-5000,na,low,advanced,"['iso-14001', 'iso-14064']",none,"['sdg', 'net-zero']","iso-14001,iso-14064","sdg,net-zero",improve,sbti,95
+Synthetic Org #238,financial,1-50,global,very-high,none,['iso-50001'],partial,['renewables'],iso-50001,renewables,measure,ghg-protocol,95
+Synthetic Org #239,technology,1000-5000,uk,very-high,basic,"['iso-50001', 'iso-45001', 'iso-14064']",none,[],"iso-50001,iso-45001,iso-14064",,measure,ghg-protocol,89
+Synthetic Org #240,chemicals,5000+,uk,moderate,advanced,[],none,[],,,manage,iso-14001,89
+Synthetic Org #241,transport,1000-5000,apac,very-high,advanced,[],partial,['renewables'],,renewables,manage,iso-14001,89
+Synthetic Org #242,technology,50-250,na,moderate,advanced,[],none,"['stakeholder-trust', 'net-zero']",,"stakeholder-trust,net-zero",improve,sbti,94
+Synthetic Org #243,construction,50-250,global,low,advanced,['iso-14001'],none,['net-zero'],iso-14001,net-zero,improve,sbti,94
+Synthetic Org #244,consumer-goods,1000-5000,eu,moderate,none,"['iso-45001', 'iso-14001']",none,"['sdg', 'stakeholder-trust', 'net-zero']","iso-45001,iso-14001","sdg,stakeholder-trust,net-zero",measure,ghg-protocol,98
+Synthetic Org #245,transport,50-250,apac,moderate,basic,['iso-14001'],partial,"['stakeholder-trust', 'sbti', 'sdg']",iso-14001,"stakeholder-trust,sbti,sdg",improve,sbti,94
+Synthetic Org #246,consumer-goods,5000+,uk,low,basic,"['iso-14064', 'iso-45001', 'iso-50001']",full,"['renewables', 'sbti']","iso-14064,iso-45001,iso-50001","renewables,sbti",improve,sbti,97
+Synthetic Org #247,transport,1000-5000,eu,very-high,none,['iso-50001'],none,"['net-zero', 'renewables']",iso-50001,"net-zero,renewables",manage,iso-14001,95
+Synthetic Org #248,consumer-goods,5000+,india,moderate,basic,['iso-50001'],none,['net-zero'],iso-50001,net-zero,report,brsr,96
+Synthetic Org #249,agriculture,250-1000,global,moderate,none,['iso-14001'],partial,[],iso-14001,,measure,ghg-protocol,93
+Synthetic Org #250,construction,5000+,apac,moderate,basic,['iso-45001'],none,[],iso-45001,,manage,iso-14001,92
+Synthetic Org #251,construction,50-250,apac,low,advanced,[],partial,"['sbti', 'renewables', 'net-zero']",,"sbti,renewables,net-zero",improve,sbti,91
+Synthetic Org #252,financial,250-1000,latam,high,basic,"['iso-45001', 'iso-50001']",partial,['sdg'],"iso-45001,iso-50001",sdg,measure,ghg-protocol,88
+Synthetic Org #253,financial,1000-5000,uk,low,advanced,['iso-50001'],partial,['sdg'],iso-50001,sdg,report,issb,80
+Synthetic Org #254,consumer-goods,1-50,india,moderate,advanced,[],none,['stakeholder-trust'],,stakeholder-trust,report,brsr,91
+Synthetic Org #255,healthcare,5000+,apac,very-high,basic,[],none,['sbti'],,sbti,improve,sbti,93
+Synthetic Org #256,consumer-goods,5000+,latam,moderate,basic,"['iso-45001', 'iso-50001', 'iso-14064']",full,"['renewables', 'sbti']","iso-45001,iso-50001,iso-14064","renewables,sbti",improve,sbti,94
+Synthetic Org #257,technology,50-250,eu,very-high,none,"['iso-14001', 'iso-45001', 'iso-14064']",full,[],"iso-14001,iso-45001,iso-14064",,measure,ghg-protocol,96
+Synthetic Org #258,manufacturing,1-50,uk,moderate,advanced,[],none,['net-zero'],,net-zero,improve,sbti,95
+Synthetic Org #259,construction,5000+,uk,high,none,"['iso-14064', 'iso-45001', 'iso-50001']",full,[],"iso-14064,iso-45001,iso-50001",,measure,ghg-protocol,96
+Synthetic Org #260,manufacturing,5000+,india,very-high,none,"['iso-45001', 'iso-14064']",none,['net-zero'],"iso-45001,iso-14064",net-zero,measure,ghg-protocol,96
+Synthetic Org #261,financial,1000-5000,latam,moderate,none,"['iso-50001', 'iso-14001']",none,['stakeholder-trust'],"iso-50001,iso-14001",stakeholder-trust,measure,ghg-protocol,90
+Synthetic Org #262,financial,250-1000,latam,high,basic,[],partial,['renewables'],,renewables,measure,ghg-protocol,87
+Synthetic Org #263,agriculture,5000+,eu,moderate,basic,[],full,[],,,report,csrd,93
+Synthetic Org #264,energy,1000-5000,uk,very-high,advanced,[],partial,[],,,manage,iso-14001,88
+Synthetic Org #265,chemicals,1-50,uk,very-high,advanced,"['iso-14001', 'iso-45001']",partial,[],"iso-14001,iso-45001",,manage,iso-50001,86
+Synthetic Org #266,construction,50-250,latam,very-high,basic,[],none,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,90
+Synthetic Org #267,healthcare,1-50,eu,high,none,"['iso-50001', 'iso-45001']",none,"['net-zero', 'sdg']","iso-50001,iso-45001","net-zero,sdg",measure,ghg-protocol,93
+Synthetic Org #268,chemicals,5000+,eu,very-high,advanced,['iso-14064'],full,['net-zero'],iso-14064,net-zero,report,csrd,98
+Synthetic Org #269,financial,250-1000,global,low,basic,[],none,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,87
+Synthetic Org #270,healthcare,5000+,uk,high,none,['iso-14064'],full,"['sbti', 'sdg']",iso-14064,"sbti,sdg",measure,ghg-protocol,98
+Synthetic Org #271,financial,1000-5000,uk,moderate,advanced,"['iso-14064', 'iso-14001', 'iso-50001']",full,['net-zero'],"iso-14064,iso-14001,iso-50001",net-zero,improve,sbti,96
+Synthetic Org #272,energy,250-1000,eu,very-high,advanced,[],full,"['sdg', 'stakeholder-trust']",,"sdg,stakeholder-trust",report,csrd,90
+Synthetic Org #273,energy,1-50,global,high,basic,['iso-14001'],partial,['net-zero'],iso-14001,net-zero,improve,sbti,92
+Synthetic Org #274,chemicals,1000-5000,uk,very-high,none,[],none,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,94
+Synthetic Org #275,energy,5000+,india,high,basic,['iso-14064'],none,"['net-zero', 'sbti']",iso-14064,"net-zero,sbti",improve,sbti,91
+Synthetic Org #276,healthcare,5000+,eu,very-high,none,['iso-45001'],none,['renewables'],iso-45001,renewables,measure,ghg-protocol,97
+Synthetic Org #277,chemicals,1-50,eu,very-high,basic,['iso-14064'],partial,[],iso-14064,,report,csrd,89
+Synthetic Org #278,technology,250-1000,eu,very-high,advanced,[],full,"['net-zero', 'sbti']",,"net-zero,sbti",improve,sbti,88
+Synthetic Org #279,transport,1-50,uk,high,advanced,['iso-14064'],partial,['renewables'],iso-14064,renewables,manage,iso-50001,88
+Synthetic Org #280,healthcare,50-250,na,high,advanced,[],full,"['sdg', 'sbti']",,"sdg,sbti",improve,sbti,93
+Synthetic Org #281,consumer-goods,250-1000,na,very-high,advanced,['iso-14064'],none,['renewables'],iso-14064,renewables,improve,renewable-energy-plan,81
+Synthetic Org #282,technology,1-50,india,moderate,advanced,[],full,"['net-zero', 'renewables', 'sdg']",,"net-zero,renewables,sdg",improve,sbti,96
+Synthetic Org #283,construction,1000-5000,latam,high,advanced,['iso-14064'],none,['sdg'],iso-14064,sdg,manage,iso-14001,89
+Synthetic Org #284,construction,250-1000,apac,moderate,advanced,['iso-14001'],partial,"['stakeholder-trust', 'renewables']",iso-14001,"stakeholder-trust,renewables",report,tcfd,73
+Synthetic Org #285,healthcare,1000-5000,india,very-high,advanced,['iso-14001'],none,[],iso-14001,,report,brsr,87
+Synthetic Org #286,construction,250-1000,eu,low,advanced,"['iso-14064', 'iso-50001', 'iso-45001']",full,[],"iso-14064,iso-50001,iso-45001",,report,csrd,96
+Synthetic Org #287,manufacturing,1-50,na,moderate,advanced,"['iso-50001', 'iso-14064']",full,['renewables'],"iso-50001,iso-14064",renewables,manage,iso-14001,81
+Synthetic Org #288,agriculture,5000+,apac,moderate,basic,['iso-14001'],none,['renewables'],iso-14001,renewables,measure,ghg-protocol,88
+Synthetic Org #289,energy,1-50,latam,moderate,basic,['iso-14064'],partial,['stakeholder-trust'],iso-14064,stakeholder-trust,manage,iso-14001,87
+Synthetic Org #290,agriculture,250-1000,uk,low,basic,"['iso-14064', 'iso-50001', 'iso-14001']",full,['net-zero'],"iso-14064,iso-50001,iso-14001",net-zero,improve,sbti,96
+Synthetic Org #291,energy,1-50,latam,high,advanced,"['iso-50001', 'iso-45001', 'iso-14001']",none,"['sbti', 'stakeholder-trust', 'renewables']","iso-50001,iso-45001,iso-14001","sbti,stakeholder-trust,renewables",improve,sbti,94
+Synthetic Org #292,financial,1000-5000,uk,moderate,basic,[],full,['renewables'],,renewables,measure,ghg-protocol,86
+Synthetic Org #293,consumer-goods,1-50,apac,moderate,basic,['iso-14064'],full,[],iso-14064,,measure,ghg-protocol,85
+Synthetic Org #294,construction,50-250,na,low,advanced,"['iso-50001', 'iso-14064']",none,['sbti'],"iso-50001,iso-14064",sbti,improve,sbti,91
+Synthetic Org #295,agriculture,1-50,na,very-high,advanced,['iso-14064'],full,"['renewables', 'net-zero', 'sbti']",iso-14064,"renewables,net-zero,sbti",improve,sbti,99
+Synthetic Org #296,technology,1000-5000,india,moderate,advanced,['iso-14001'],full,['sdg'],iso-14001,sdg,report,brsr,90
+Synthetic Org #297,energy,50-250,na,low,none,"['iso-50001', 'iso-45001', 'iso-14064']",partial,"['stakeholder-trust', 'sbti']","iso-50001,iso-45001,iso-14064","stakeholder-trust,sbti",measure,ghg-protocol,98
+Synthetic Org #298,healthcare,1000-5000,uk,moderate,basic,"['iso-50001', 'iso-45001']",full,['renewables'],"iso-50001,iso-45001",renewables,measure,ghg-protocol,89
+Synthetic Org #299,transport,50-250,eu,high,basic,[],full,['net-zero'],,net-zero,improve,sbti,95
+Synthetic Org #300,agriculture,50-250,eu,very-high,advanced,"['iso-14064', 'iso-50001', 'iso-45001']",full,"['renewables', 'stakeholder-trust']","iso-14064,iso-50001,iso-45001","renewables,stakeholder-trust",report,csrd,92
+Synthetic Org #301,chemicals,1-50,india,low,none,[],partial,['sbti'],,sbti,improve,sbti,96
+Synthetic Org #302,financial,250-1000,eu,very-high,advanced,['iso-14001'],full,"['net-zero', 'sdg', 'renewables']",iso-14001,"net-zero,sdg,renewables",improve,sbti,97
+Synthetic Org #303,technology,5000+,latam,low,advanced,"['iso-50001', 'iso-14064']",partial,[],"iso-50001,iso-14064",,report,issb,80
+Synthetic Org #304,construction,250-1000,latam,low,basic,['iso-14001'],partial,"['net-zero', 'sbti']",iso-14001,"net-zero,sbti",measure,ghg-protocol,96
+Synthetic Org #305,construction,5000+,apac,high,advanced,"['iso-14064', 'iso-14001', 'iso-45001']",full,['sbti'],"iso-14064,iso-14001,iso-45001",sbti,improve,sbti,90
+Synthetic Org #306,manufacturing,5000+,na,high,advanced,[],full,['sdg'],,sdg,manage,iso-14001,94
+Synthetic Org #307,transport,5000+,na,low,none,[],partial,['sbti'],,sbti,measure,ghg-protocol,98
+Synthetic Org #308,chemicals,50-250,eu,high,none,['iso-14064'],full,['stakeholder-trust'],iso-14064,stakeholder-trust,report,csrd,97
+Synthetic Org #309,transport,1000-5000,uk,very-high,none,[],full,"['stakeholder-trust', 'sdg']",,"stakeholder-trust,sdg",measure,ghg-protocol,89
+Synthetic Org #310,technology,1000-5000,uk,high,advanced,"['iso-14001', 'iso-45001', 'iso-50001']",none,['net-zero'],"iso-14001,iso-45001,iso-50001",net-zero,improve,sbti,93
+Synthetic Org #311,financial,1000-5000,eu,very-high,none,['iso-45001'],partial,['sdg'],iso-45001,sdg,measure,ghg-protocol,97
+Synthetic Org #312,financial,5000+,eu,very-high,basic,[],full,[],,,report,csrd,94
+Synthetic Org #313,energy,1000-5000,global,low,none,['iso-14001'],partial,"['sbti', 'stakeholder-trust']",iso-14001,"sbti,stakeholder-trust",improve,sbti,96
+Synthetic Org #314,transport,50-250,latam,high,none,['iso-45001'],full,[],iso-45001,,measure,ghg-protocol,98
+Synthetic Org #315,technology,50-250,global,very-high,advanced,"['iso-50001', 'iso-14064', 'iso-14001']",partial,[],"iso-50001,iso-14064,iso-14001",,improve,renewable-energy-plan,77
+Synthetic Org #316,manufacturing,50-250,uk,low,none,[],full,"['renewables', 'net-zero', 'stakeholder-trust']",,"renewables,net-zero,stakeholder-trust",improve,sbti,95
+Synthetic Org #317,technology,1-50,latam,very-high,advanced,['iso-14001'],none,['renewables'],iso-14001,renewables,improve,renewable-energy-plan,75
+Synthetic Org #318,energy,1-50,global,high,basic,[],partial,"['sbti', 'stakeholder-trust']",,"sbti,stakeholder-trust",improve,sbti,97
+Synthetic Org #319,energy,5000+,india,low,advanced,[],full,"['sdg', 'sbti']",,"sdg,sbti",improve,sbti,97
+Synthetic Org #320,chemicals,1000-5000,india,very-high,none,[],none,['net-zero'],,net-zero,improve,sbti,99
+Synthetic Org #321,healthcare,1000-5000,na,very-high,basic,[],none,['net-zero'],,net-zero,improve,sbti,95
+Synthetic Org #322,construction,5000+,india,high,advanced,"['iso-45001', 'iso-14001', 'iso-14064']",none,"['sdg', 'net-zero']","iso-45001,iso-14001,iso-14064","sdg,net-zero",improve,sbti,96
+Synthetic Org #323,construction,1000-5000,uk,low,none,"['iso-14001', 'iso-45001', 'iso-14064']",partial,['sdg'],"iso-14001,iso-45001,iso-14064",sdg,measure,ghg-protocol,96
+Synthetic Org #324,chemicals,1000-5000,latam,very-high,basic,"['iso-50001', 'iso-14064', 'iso-14001']",full,[],"iso-50001,iso-14064,iso-14001",,report,issb,87
+Synthetic Org #325,healthcare,1-50,global,high,none,[],none,"['stakeholder-trust', 'sdg']",,"stakeholder-trust,sdg",measure,ghg-protocol,97
+Synthetic Org #326,financial,1000-5000,uk,very-high,none,"['iso-50001', 'iso-14064']",full,[],"iso-50001,iso-14064",,measure,ghg-protocol,98
+Synthetic Org #327,transport,1-50,india,moderate,none,['iso-14064'],full,"['net-zero', 'sdg', 'renewables']",iso-14064,"net-zero,sdg,renewables",improve,sbti,96
+Synthetic Org #328,consumer-goods,50-250,global,moderate,none,[],partial,"['stakeholder-trust', 'net-zero']",,"stakeholder-trust,net-zero",measure,ghg-protocol,99
+Synthetic Org #329,transport,50-250,global,low,advanced,"['iso-14001', 'iso-14064', 'iso-50001']",none,['stakeholder-trust'],"iso-14001,iso-14064,iso-50001",stakeholder-trust,measure,ghg-protocol,68
+Synthetic Org #330,financial,250-1000,eu,high,none,['iso-14001'],full,[],iso-14001,,measure,ghg-protocol,94
+Synthetic Org #331,technology,1000-5000,na,low,basic,"['iso-14001', 'iso-50001']",full,"['stakeholder-trust', 'sdg']","iso-14001,iso-50001","stakeholder-trust,sdg",measure,ghg-protocol,90
+Synthetic Org #332,manufacturing,1000-5000,latam,moderate,basic,['iso-14001'],none,"['net-zero', 'sbti', 'sdg']",iso-14001,"net-zero,sbti,sdg",improve,sbti,92
+Synthetic Org #333,financial,1-50,global,low,none,['iso-45001'],none,"['sbti', 'stakeholder-trust']",iso-45001,"sbti,stakeholder-trust",measure,ghg-protocol,95
+Synthetic Org #334,manufacturing,5000+,latam,very-high,none,[],partial,"['sdg', 'stakeholder-trust']",,"sdg,stakeholder-trust",measure,ghg-protocol,95
+Synthetic Org #335,energy,5000+,na,low,advanced,[],full,['sbti'],,sbti,manage,iso-14001,90
+Synthetic Org #336,financial,1-50,uk,low,basic,['iso-45001'],partial,[],iso-45001,,measure,ghg-protocol,85
+Synthetic Org #337,financial,1000-5000,global,high,none,"['iso-45001', 'iso-14064']",partial,"['sbti', 'renewables', 'stakeholder-trust']","iso-45001,iso-14064","sbti,renewables,stakeholder-trust",measure,ghg-protocol,94
+Synthetic Org #338,healthcare,1000-5000,latam,moderate,advanced,[],full,['net-zero'],,net-zero,improve,sbti,91
+Synthetic Org #339,consumer-goods,1-50,eu,high,advanced,[],full,['net-zero'],,net-zero,improve,sbti,94
+Synthetic Org #340,consumer-goods,250-1000,global,moderate,advanced,['iso-14064'],none,[],iso-14064,,report,tcfd,70
+Synthetic Org #341,chemicals,250-1000,global,low,none,['iso-45001'],full,"['net-zero', 'stakeholder-trust']",iso-45001,"net-zero,stakeholder-trust",improve,sbti,99
+Synthetic Org #342,financial,50-250,apac,very-high,none,"['iso-14001', 'iso-50001']",full,['sbti'],"iso-14001,iso-50001",sbti,measure,ghg-protocol,95
+Synthetic Org #343,transport,250-1000,latam,high,basic,"['iso-45001', 'iso-50001', 'iso-14064']",full,['sbti'],"iso-45001,iso-50001,iso-14064",sbti,measure,ghg-protocol,93
+Synthetic Org #344,energy,50-250,eu,low,none,[],none,"['renewables', 'sdg']",,"renewables,sdg",measure,ghg-protocol,99
+Synthetic Org #345,consumer-goods,1-50,india,high,none,['iso-14064'],partial,['net-zero'],iso-14064,net-zero,improve,sbti,96
+Synthetic Org #346,energy,50-250,latam,high,advanced,"['iso-14001', 'iso-14064']",full,['sbti'],"iso-14001,iso-14064",sbti,improve,sbti,98
+Synthetic Org #347,energy,50-250,na,very-high,advanced,"['iso-45001', 'iso-50001', 'iso-14001']",none,[],"iso-45001,iso-50001,iso-14001",,improve,renewable-energy-plan,77
+Synthetic Org #348,consumer-goods,1000-5000,india,moderate,none,[],partial,['net-zero'],,net-zero,improve,sbti,94
+Synthetic Org #349,manufacturing,1-50,latam,moderate,none,['iso-45001'],none,[],iso-45001,,measure,ghg-protocol,94
+Synthetic Org #350,healthcare,5000+,na,low,none,[],none,"['sbti', 'net-zero']",,"sbti,net-zero",improve,sbti,95
+Synthetic Org #351,technology,1-50,global,very-high,none,"['iso-14064', 'iso-45001']",none,"['renewables', 'net-zero']","iso-14064,iso-45001","renewables,net-zero",measure,ghg-protocol,99
+Synthetic Org #352,consumer-goods,1000-5000,eu,high,none,['iso-45001'],none,"['sbti', 'net-zero']",iso-45001,"sbti,net-zero",report,csrd,97
+Synthetic Org #353,healthcare,5000+,india,moderate,advanced,['iso-14064'],partial,"['renewables', 'net-zero', 'stakeholder-trust']",iso-14064,"renewables,net-zero,stakeholder-trust",improve,sbti,96
+Synthetic Org #354,transport,1000-5000,eu,very-high,none,"['iso-50001', 'iso-45001']",full,"['net-zero', 'renewables', 'sdg']","iso-50001,iso-45001","net-zero,renewables,sdg",measure,ghg-protocol,96
+Synthetic Org #355,technology,1000-5000,india,very-high,basic,"['iso-45001', 'iso-50001']",full,['sbti'],"iso-45001,iso-50001",sbti,report,brsr,98
+Synthetic Org #356,manufacturing,250-1000,india,moderate,none,[],partial,"['stakeholder-trust', 'sdg']",,"stakeholder-trust,sdg",measure,ghg-protocol,96
+Synthetic Org #357,healthcare,50-250,eu,low,none,[],full,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,98
+Synthetic Org #358,manufacturing,50-250,india,very-high,basic,[],none,['stakeholder-trust'],,stakeholder-trust,report,brsr,95
+Synthetic Org #359,technology,250-1000,india,low,advanced,['iso-50001'],full,"['sbti', 'renewables', 'sdg']",iso-50001,"sbti,renewables,sdg",improve,sbti,95
+Synthetic Org #360,transport,50-250,uk,low,none,[],none,"['sbti', 'net-zero', 'sdg']",,"sbti,net-zero,sdg",measure,ghg-protocol,97
+Synthetic Org #361,agriculture,1-50,na,moderate,none,"['iso-50001', 'iso-14064', 'iso-14001']",partial,[],"iso-50001,iso-14064,iso-14001",,measure,ghg-protocol,92
+Synthetic Org #362,chemicals,5000+,apac,moderate,none,['iso-14001'],full,['renewables'],iso-14001,renewables,measure,ghg-protocol,98
+Synthetic Org #363,healthcare,1-50,na,high,basic,[],none,"['renewables', 'sdg']",,"renewables,sdg",measure,ghg-protocol,88
+Synthetic Org #364,chemicals,5000+,apac,high,none,"['iso-50001', 'iso-14064']",full,['sdg'],"iso-50001,iso-14064",sdg,measure,ghg-protocol,99
+Synthetic Org #365,chemicals,50-250,apac,low,advanced,['iso-14001'],full,['stakeholder-trust'],iso-14001,stakeholder-trust,report,gri,77
+Synthetic Org #366,technology,5000+,eu,low,basic,['iso-14001'],none,['sdg'],iso-14001,sdg,report,csrd,89
+Synthetic Org #367,technology,50-250,apac,low,advanced,"['iso-45001', 'iso-50001', 'iso-14001']",full,['sbti'],"iso-45001,iso-50001,iso-14001",sbti,improve,sbti,92
+Synthetic Org #368,construction,1-50,na,high,none,[],full,[],,,measure,ghg-protocol,93
+Synthetic Org #369,consumer-goods,1000-5000,apac,very-high,none,['iso-14064'],partial,['stakeholder-trust'],iso-14064,stakeholder-trust,measure,ghg-protocol,98
+Synthetic Org #370,consumer-goods,1-50,latam,very-high,advanced,"['iso-50001', 'iso-14001', 'iso-14064']",full,[],"iso-50001,iso-14001,iso-14064",,report,gri,80
+Synthetic Org #371,manufacturing,250-1000,global,high,basic,[],none,['sbti'],,sbti,improve,sbti,94
+Synthetic Org #372,consumer-goods,50-250,apac,low,advanced,['iso-14064'],none,[],iso-14064,,measure,ghg-protocol,77
+Synthetic Org #373,consumer-goods,50-250,india,very-high,none,[],none,['sbti'],,sbti,measure,ghg-protocol,99
+Synthetic Org #374,construction,1000-5000,apac,high,advanced,['iso-50001'],partial,[],iso-50001,,manage,iso-14001,92
+Synthetic Org #375,manufacturing,1000-5000,india,very-high,none,['iso-14001'],none,"['net-zero', 'sdg']",iso-14001,"net-zero,sdg",improve,sbti,97
+Synthetic Org #376,healthcare,1000-5000,eu,low,none,[],none,['net-zero'],,net-zero,report,csrd,95
+Synthetic Org #377,agriculture,1-50,na,very-high,basic,"['iso-45001', 'iso-14001', 'iso-50001']",partial,['sdg'],"iso-45001,iso-14001,iso-50001",sdg,measure,ghg-protocol,91
+Synthetic Org #378,consumer-goods,250-1000,eu,very-high,none,['iso-14064'],partial,['sbti'],iso-14064,sbti,measure,ghg-protocol,96
+Synthetic Org #379,transport,5000+,global,moderate,advanced,[],full,[],,,manage,iso-14001,87
+Synthetic Org #380,technology,5000+,uk,moderate,advanced,['iso-14064'],none,"['renewables', 'sbti', 'stakeholder-trust']",iso-14064,"renewables,sbti,stakeholder-trust",improve,sbti,90
+Synthetic Org #381,transport,1-50,uk,low,advanced,"['iso-50001', 'iso-14001']",full,"['sbti', 'stakeholder-trust']","iso-50001,iso-14001","sbti,stakeholder-trust",improve,sbti,94
+Synthetic Org #382,construction,50-250,eu,low,basic,"['iso-14064', 'iso-14001', 'iso-45001']",none,"['sdg', 'stakeholder-trust', 'renewables']","iso-14064,iso-14001,iso-45001","sdg,stakeholder-trust,renewables",report,csrd,89
+Synthetic Org #383,energy,1-50,uk,very-high,advanced,['iso-14064'],partial,[],iso-14064,,manage,iso-14001,86
+Synthetic Org #384,healthcare,5000+,india,very-high,none,[],partial,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,94
+Synthetic Org #385,healthcare,5000+,latam,low,none,[],full,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,95
+Synthetic Org #386,technology,1000-5000,na,very-high,advanced,"['iso-14064', 'iso-14001']",partial,['sdg'],"iso-14064,iso-14001",sdg,report,issb,82
+Synthetic Org #387,consumer-goods,50-250,india,very-high,none,['iso-50001'],partial,[],iso-50001,,measure,ghg-protocol,99
+Synthetic Org #388,agriculture,250-1000,na,low,basic,['iso-45001'],partial,"['net-zero', 'sbti']",iso-45001,"net-zero,sbti",improve,sbti,91
+Synthetic Org #389,chemicals,250-1000,apac,very-high,basic,"['iso-14064', 'iso-45001', 'iso-14001']",partial,['renewables'],"iso-14064,iso-45001,iso-14001",renewables,measure,ghg-protocol,88
+Synthetic Org #390,construction,1000-5000,apac,very-high,advanced,[],partial,"['sbti', 'net-zero', 'stakeholder-trust']",,"sbti,net-zero,stakeholder-trust",manage,iso-14001,93
+Synthetic Org #391,financial,1000-5000,eu,low,none,[],none,[],,,measure,ghg-protocol,99
+Synthetic Org #392,construction,1-50,uk,low,basic,[],full,['sdg'],,sdg,manage,iso-14001,89
+Synthetic Org #393,agriculture,5000+,uk,low,advanced,[],none,['renewables'],,renewables,report,issb,82
+Synthetic Org #394,healthcare,1000-5000,eu,very-high,advanced,['iso-45001'],full,['sdg'],iso-45001,sdg,report,csrd,89
+Synthetic Org #395,energy,250-1000,global,very-high,none,"['iso-50001', 'iso-14001']",none,['sbti'],"iso-50001,iso-14001",sbti,improve,sbti,99
+Synthetic Org #396,transport,1000-5000,india,low,advanced,['iso-50001'],none,['stakeholder-trust'],iso-50001,stakeholder-trust,manage,iso-14001,95
+Synthetic Org #397,manufacturing,50-250,na,high,advanced,"['iso-45001', 'iso-50001', 'iso-14064']",full,['renewables'],"iso-45001,iso-50001,iso-14064",renewables,manage,iso-14001,87
+Synthetic Org #398,transport,50-250,uk,high,advanced,"['iso-14064', 'iso-45001']",full,[],"iso-14064,iso-45001",,manage,iso-50001,86
+Synthetic Org #399,manufacturing,5000+,apac,high,advanced,"['iso-45001', 'iso-50001']",full,[],"iso-45001,iso-50001",,manage,iso-14001,89
+Synthetic Org #400,agriculture,1-50,na,high,advanced,['iso-45001'],partial,['sbti'],iso-45001,sbti,improve,sbti,94
+Synthetic Org #401,chemicals,5000+,latam,moderate,none,['iso-45001'],full,['net-zero'],iso-45001,net-zero,measure,ghg-protocol,98
+Synthetic Org #402,agriculture,250-1000,na,very-high,basic,"['iso-14001', 'iso-45001', 'iso-14064']",partial,['sbti'],"iso-14001,iso-45001,iso-14064",sbti,improve,sbti,98
+Synthetic Org #403,financial,1000-5000,apac,high,advanced,[],partial,"['sbti', 'sdg', 'net-zero']",,"sbti,sdg,net-zero",improve,sbti,96
+Synthetic Org #404,agriculture,50-250,apac,high,advanced,[],full,['net-zero'],,net-zero,improve,sbti,93
+Synthetic Org #405,construction,250-1000,eu,high,basic,['iso-45001'],partial,"['sdg', 'renewables', 'net-zero']",iso-45001,"sdg,renewables,net-zero",improve,sbti,97
+Synthetic Org #406,agriculture,1-50,latam,low,basic,"['iso-14001', 'iso-45001']",none,"['stakeholder-trust', 'sdg']","iso-14001,iso-45001","stakeholder-trust,sdg",measure,ghg-protocol,87
+Synthetic Org #407,consumer-goods,1-50,latam,moderate,none,['iso-14064'],none,"['renewables', 'sbti', 'stakeholder-trust']",iso-14064,"renewables,sbti,stakeholder-trust",measure,ghg-protocol,95
+Synthetic Org #408,chemicals,1-50,uk,high,advanced,['iso-14001'],none,[],iso-14001,,manage,iso-50001,83
+Synthetic Org #409,agriculture,250-1000,eu,moderate,advanced,['iso-14001'],none,['stakeholder-trust'],iso-14001,stakeholder-trust,report,csrd,89
+Synthetic Org #410,consumer-goods,1000-5000,uk,very-high,basic,[],partial,[],,,measure,ghg-protocol,86
+Synthetic Org #411,financial,50-250,apac,high,none,"['iso-50001', 'iso-14001']",partial,[],"iso-50001,iso-14001",,measure,ghg-protocol,99
+Synthetic Org #412,construction,50-250,apac,high,basic,[],none,"['stakeholder-trust', 'sdg']",,"stakeholder-trust,sdg",manage,iso-14001,83
+Synthetic Org #413,chemicals,1-50,latam,low,basic,['iso-45001'],partial,"['sbti', 'sdg']",iso-45001,"sbti,sdg",improve,sbti,94
+Synthetic Org #414,agriculture,250-1000,latam,moderate,none,[],partial,['sbti'],,sbti,measure,ghg-protocol,99
+Synthetic Org #415,chemicals,50-250,apac,low,advanced,[],full,[],,,manage,iso-14001,83
+Synthetic Org #416,technology,1-50,uk,high,advanced,[],full,"['net-zero', 'stakeholder-trust', 'sdg']",,"net-zero,stakeholder-trust,sdg",improve,sbti,92
+Synthetic Org #417,manufacturing,1-50,apac,low,basic,['iso-14001'],partial,"['sdg', 'renewables', 'stakeholder-trust']",iso-14001,"sdg,renewables,stakeholder-trust",measure,ghg-protocol,89
+Synthetic Org #418,chemicals,50-250,apac,low,basic,"['iso-14001', 'iso-45001', 'iso-50001']",partial,"['stakeholder-trust', 'sbti', 'renewables']","iso-14001,iso-45001,iso-50001","stakeholder-trust,sbti,renewables",improve,sbti,94
+Synthetic Org #419,energy,5000+,apac,low,basic,[],none,"['sbti', 'stakeholder-trust']",,"sbti,stakeholder-trust",improve,sbti,98
+Synthetic Org #420,transport,5000+,eu,high,advanced,['iso-50001'],partial,[],iso-50001,,report,csrd,96
+Synthetic Org #421,financial,1000-5000,eu,very-high,basic,[],none,[],,,report,csrd,89
+Synthetic Org #422,energy,1-50,latam,very-high,none,"['iso-14001', 'iso-45001']",none,[],"iso-14001,iso-45001",,measure,ghg-protocol,93
+Synthetic Org #423,transport,50-250,uk,high,basic,[],partial,[],,,manage,iso-50001,85
+Synthetic Org #424,chemicals,1-50,latam,high,basic,['iso-14064'],full,[],iso-14064,,manage,iso-14001,90
+Synthetic Org #425,energy,1-50,global,moderate,advanced,[],full,['sdg'],,sdg,manage,iso-14001,87
+Synthetic Org #426,agriculture,5000+,na,low,basic,[],partial,[],,,measure,ghg-protocol,93
+Synthetic Org #427,consumer-goods,1000-5000,uk,high,basic,['iso-14064'],full,['net-zero'],iso-14064,net-zero,improve,sbti,93
+Synthetic Org #428,chemicals,1-50,latam,moderate,none,"['iso-14064', 'iso-45001']",partial,"['sbti', 'renewables']","iso-14064,iso-45001","sbti,renewables",improve,sbti,99
+Synthetic Org #429,technology,5000+,global,moderate,basic,[],partial,"['renewables', 'net-zero']",,"renewables,net-zero",improve,sbti,92
+Synthetic Org #430,energy,250-1000,apac,high,none,"['iso-50001', 'iso-45001', 'iso-14064']",full,"['stakeholder-trust', 'net-zero', 'sbti']","iso-50001,iso-45001,iso-14064","stakeholder-trust,net-zero,sbti",improve,sbti,96
+Synthetic Org #431,construction,1000-5000,na,very-high,none,"['iso-14001', 'iso-14064']",full,['stakeholder-trust'],"iso-14001,iso-14064",stakeholder-trust,measure,ghg-protocol,95
+Synthetic Org #432,agriculture,1000-5000,latam,moderate,none,['iso-50001'],partial,['sdg'],iso-50001,sdg,measure,ghg-protocol,92
+Synthetic Org #433,manufacturing,5000+,eu,very-high,basic,[],none,"['renewables', 'stakeholder-trust']",,"renewables,stakeholder-trust",report,csrd,93
+Synthetic Org #434,energy,1000-5000,uk,high,none,"['iso-14001', 'iso-14064', 'iso-50001']",partial,"['net-zero', 'stakeholder-trust']","iso-14001,iso-14064,iso-50001","net-zero,stakeholder-trust",measure,ghg-protocol,99
+Synthetic Org #435,energy,5000+,india,high,advanced,[],full,"['sdg', 'stakeholder-trust']",,"sdg,stakeholder-trust",report,brsr,88
+Synthetic Org #436,manufacturing,50-250,latam,very-high,basic,"['iso-14064', 'iso-45001']",full,['renewables'],"iso-14064,iso-45001",renewables,manage,iso-14001,88
+Synthetic Org #437,energy,1-50,latam,moderate,none,['iso-45001'],partial,"['stakeholder-trust', 'sdg', 'renewables']",iso-45001,"stakeholder-trust,sdg,renewables",measure,ghg-protocol,90
+Synthetic Org #438,energy,1-50,eu,very-high,none,"['iso-14064', 'iso-14001', 'iso-50001']",full,"['sbti', 'stakeholder-trust', 'net-zero']","iso-14064,iso-14001,iso-50001","sbti,stakeholder-trust,net-zero",improve,sbti,96
+Synthetic Org #439,consumer-goods,50-250,uk,moderate,advanced,[],partial,"['net-zero', 'stakeholder-trust']",,"net-zero,stakeholder-trust",improve,sbti,99
+Synthetic Org #440,agriculture,1000-5000,apac,moderate,basic,"['iso-14001', 'iso-45001']",none,"['stakeholder-trust', 'renewables']","iso-14001,iso-45001","stakeholder-trust,renewables",measure,ghg-protocol,85
+Synthetic Org #441,financial,50-250,apac,moderate,advanced,[],none,"['stakeholder-trust', 'sdg']",,"stakeholder-trust,sdg",report,tcfd,71
+Synthetic Org #442,financial,1000-5000,uk,moderate,basic,['iso-45001'],partial,"['sbti', 'stakeholder-trust']",iso-45001,"sbti,stakeholder-trust",improve,sbti,99
+Synthetic Org #443,consumer-goods,5000+,apac,high,advanced,['iso-50001'],full,['sbti'],iso-50001,sbti,improve,sbti,93
+Synthetic Org #444,healthcare,250-1000,apac,high,advanced,"['iso-50001', 'iso-45001', 'iso-14064']",none,[],"iso-50001,iso-45001,iso-14064",,improve,renewable-energy-plan,75
+Synthetic Org #445,technology,5000+,uk,very-high,advanced,"['iso-45001', 'iso-50001']",full,[],"iso-45001,iso-50001",,report,issb,82
+Synthetic Org #446,financial,1-50,global,very-high,none,"['iso-14001', 'iso-14064', 'iso-50001']",none,['sdg'],"iso-14001,iso-14064,iso-50001",sdg,measure,ghg-protocol,96
+Synthetic Org #447,transport,50-250,latam,low,advanced,[],partial,"['net-zero', 'sdg', 'sbti']",,"net-zero,sdg,sbti",improve,sbti,98
+Synthetic Org #448,energy,5000+,latam,moderate,advanced,"['iso-14064', 'iso-14001']",full,"['sdg', 'net-zero', 'sbti']","iso-14064,iso-14001","sdg,net-zero,sbti",improve,sbti,92
+Synthetic Org #449,consumer-goods,1000-5000,latam,high,advanced,[],none,['sbti'],,sbti,improve,sbti,95
+Synthetic Org #450,healthcare,1000-5000,latam,moderate,advanced,"['iso-45001', 'iso-14064', 'iso-14001']",full,['sdg'],"iso-45001,iso-14064,iso-14001",sdg,report,issb,82
+Synthetic Org #451,agriculture,50-250,apac,low,none,"['iso-14001', 'iso-50001', 'iso-14064']",none,"['sdg', 'stakeholder-trust']","iso-14001,iso-50001,iso-14064","sdg,stakeholder-trust",measure,ghg-protocol,93
+Synthetic Org #452,chemicals,50-250,india,high,none,['iso-50001'],partial,[],iso-50001,,measure,ghg-protocol,91
+Synthetic Org #453,chemicals,250-1000,india,low,advanced,"['iso-45001', 'iso-50001', 'iso-14064']",full,[],"iso-45001,iso-50001,iso-14064",,report,brsr,89
+Synthetic Org #454,technology,5000+,eu,moderate,advanced,"['iso-50001', 'iso-14064']",none,"['stakeholder-trust', 'renewables', 'net-zero']","iso-50001,iso-14064","stakeholder-trust,renewables,net-zero",improve,sbti,99
+Synthetic Org #455,technology,50-250,eu,high,basic,['iso-50001'],partial,"['stakeholder-trust', 'renewables', 'sdg']",iso-50001,"stakeholder-trust,renewables,sdg",report,csrd,95
+Synthetic Org #456,manufacturing,1-50,apac,high,basic,"['iso-50001', 'iso-14001', 'iso-14064']",none,"['net-zero', 'renewables']","iso-50001,iso-14001,iso-14064","net-zero,renewables",improve,sbti,92
+Synthetic Org #457,transport,5000+,apac,high,none,['iso-14064'],full,"['net-zero', 'sdg']",iso-14064,"net-zero,sdg",measure,ghg-protocol,99
+Synthetic Org #458,construction,250-1000,india,low,none,"['iso-14001', 'iso-45001']",none,[],"iso-14001,iso-45001",,measure,ghg-protocol,99
+Synthetic Org #459,construction,50-250,latam,very-high,none,"['iso-14064', 'iso-45001']",none,[],"iso-14064,iso-45001",,measure,ghg-protocol,98
+Synthetic Org #460,chemicals,1-50,uk,high,none,[],none,[],,,measure,ghg-protocol,92
+Synthetic Org #461,chemicals,250-1000,india,low,advanced,['iso-14064'],none,"['renewables', 'stakeholder-trust']",iso-14064,"renewables,stakeholder-trust",report,brsr,88
+Synthetic Org #462,consumer-goods,250-1000,global,very-high,advanced,"['iso-14001', 'iso-45001']",none,"['net-zero', 'stakeholder-trust', 'sdg']","iso-14001,iso-45001","net-zero,stakeholder-trust,sdg",improve,sbti,95
+Synthetic Org #463,energy,250-1000,india,low,basic,['iso-14001'],full,['renewables'],iso-14001,renewables,report,brsr,92
+Synthetic Org #464,consumer-goods,1000-5000,latam,low,basic,"['iso-50001', 'iso-14001']",none,"['stakeholder-trust', 'sdg']","iso-50001,iso-14001","stakeholder-trust,sdg",measure,ghg-protocol,88
+Synthetic Org #465,chemicals,250-1000,apac,high,none,"['iso-50001', 'iso-14001']",full,[],"iso-50001,iso-14001",,measure,ghg-protocol,92
+Synthetic Org #466,manufacturing,5000+,india,very-high,advanced,[],full,['sbti'],,sbti,manage,iso-14001,96
+Synthetic Org #467,technology,50-250,uk,moderate,none,[],none,"['sdg', 'sbti', 'net-zero']",,"sdg,sbti,net-zero",improve,sbti,93
+Synthetic Org #468,chemicals,5000+,latam,low,advanced,"['iso-14001', 'iso-50001', 'iso-14064']",partial,['net-zero'],"iso-14001,iso-50001,iso-14064",net-zero,improve,sbti,93
+Synthetic Org #469,construction,5000+,uk,high,basic,"['iso-50001', 'iso-14001', 'iso-14064']",none,"['net-zero', 'sbti', 'renewables']","iso-50001,iso-14001,iso-14064","net-zero,sbti,renewables",improve,sbti,99
+Synthetic Org #470,agriculture,1000-5000,na,high,advanced,[],full,"['stakeholder-trust', 'sdg', 'sbti']",,"stakeholder-trust,sdg,sbti",improve,sbti,99
+Synthetic Org #471,consumer-goods,50-250,global,high,none,"['iso-14064', 'iso-50001', 'iso-45001']",none,['sdg'],"iso-14064,iso-50001,iso-45001",sdg,measure,ghg-protocol,97
+Synthetic Org #472,agriculture,1000-5000,uk,high,basic,"['iso-14001', 'iso-14064']",partial,"['net-zero', 'sdg', 'stakeholder-trust']","iso-14001,iso-14064","net-zero,sdg,stakeholder-trust",improve,sbti,96
+Synthetic Org #473,financial,50-250,na,low,advanced,[],none,"['net-zero', 'renewables', 'sdg']",,"net-zero,renewables,sdg",improve,sbti,95
+Synthetic Org #474,construction,1-50,india,high,advanced,['iso-50001'],full,['renewables'],iso-50001,renewables,report,brsr,90
+Synthetic Org #475,construction,5000+,apac,high,none,"['iso-14001', 'iso-50001']",partial,['stakeholder-trust'],"iso-14001,iso-50001",stakeholder-trust,measure,ghg-protocol,98
+Synthetic Org #476,manufacturing,50-250,latam,moderate,advanced,['iso-50001'],none,['stakeholder-trust'],iso-50001,stakeholder-trust,manage,iso-14001,85
+Synthetic Org #477,healthcare,50-250,apac,very-high,basic,[],none,"['sbti', 'net-zero']",,"sbti,net-zero",measure,ghg-protocol,89
+Synthetic Org #478,transport,250-1000,eu,low,advanced,"['iso-45001', 'iso-50001']",none,"['renewables', 'net-zero']","iso-45001,iso-50001","renewables,net-zero",improve,sbti,97
+Synthetic Org #479,manufacturing,250-1000,global,high,advanced,"['iso-50001', 'iso-14064']",partial,"['sdg', 'net-zero']","iso-50001,iso-14064","sdg,net-zero",improve,sbti,98
+Synthetic Org #480,financial,250-1000,uk,moderate,advanced,['iso-45001'],partial,"['renewables', 'net-zero']",iso-45001,"renewables,net-zero",improve,sbti,93
+Synthetic Org #481,financial,50-250,uk,moderate,none,"['iso-45001', 'iso-14001']",none,['sbti'],"iso-45001,iso-14001",sbti,measure,ghg-protocol,99
+Synthetic Org #482,chemicals,250-1000,india,low,advanced,['iso-45001'],none,[],iso-45001,,report,brsr,89
+Synthetic Org #483,agriculture,1000-5000,uk,moderate,advanced,"['iso-14064', 'iso-14001', 'iso-45001']",none,[],"iso-14064,iso-14001,iso-45001",,report,issb,78
+Synthetic Org #484,chemicals,5000+,india,moderate,none,"['iso-14001', 'iso-45001']",full,['net-zero'],"iso-14001,iso-45001",net-zero,measure,ghg-protocol,97
+Synthetic Org #485,chemicals,250-1000,eu,very-high,advanced,"['iso-14001', 'iso-45001', 'iso-50001']",full,[],"iso-14001,iso-45001,iso-50001",,report,csrd,94
+Synthetic Org #486,construction,1000-5000,india,very-high,basic,[],none,"['stakeholder-trust', 'sbti']",,"stakeholder-trust,sbti",manage,iso-14001,95
+Synthetic Org #487,healthcare,50-250,india,high,none,"['iso-45001', 'iso-50001', 'iso-14001']",full,['renewables'],"iso-45001,iso-50001,iso-14001",renewables,measure,ghg-protocol,93
+Synthetic Org #488,consumer-goods,50-250,global,low,none,"['iso-14064', 'iso-14001']",full,"['net-zero', 'sbti', 'renewables']","iso-14064,iso-14001","net-zero,sbti,renewables",measure,ghg-protocol,99
+Synthetic Org #489,healthcare,5000+,global,low,none,"['iso-50001', 'iso-45001', 'iso-14001']",partial,"['stakeholder-trust', 'renewables']","iso-50001,iso-45001,iso-14001","stakeholder-trust,renewables",measure,ghg-protocol,95
+Synthetic Org #490,technology,1-50,apac,very-high,none,['iso-45001'],partial,"['stakeholder-trust', 'net-zero', 'sbti']",iso-45001,"stakeholder-trust,net-zero,sbti",improve,sbti,96
+Synthetic Org #491,chemicals,250-1000,uk,moderate,none,"['iso-14064', 'iso-50001']",partial,['net-zero'],"iso-14064,iso-50001",net-zero,improve,sbti,95
+Synthetic Org #492,manufacturing,5000+,india,low,advanced,['iso-50001'],none,['renewables'],iso-50001,renewables,manage,iso-14001,87
+Synthetic Org #493,technology,1-50,eu,very-high,advanced,['iso-45001'],full,"['renewables', 'sdg', 'stakeholder-trust']",iso-45001,"renewables,sdg,stakeholder-trust",report,csrd,88
+Synthetic Org #494,transport,1000-5000,latam,moderate,basic,"['iso-14064', 'iso-14001']",full,['stakeholder-trust'],"iso-14064,iso-14001",stakeholder-trust,measure,ghg-protocol,91
+Synthetic Org #495,financial,1000-5000,na,high,advanced,"['iso-14064', 'iso-45001', 'iso-14001']",partial,[],"iso-14064,iso-45001,iso-14001",,report,issb,84
+Synthetic Org #496,construction,1000-5000,latam,moderate,none,"['iso-14064', 'iso-50001']",none,"['stakeholder-trust', 'net-zero', 'renewables']","iso-14064,iso-50001","stakeholder-trust,net-zero,renewables",measure,ghg-protocol,99
+Synthetic Org #497,consumer-goods,1-50,latam,low,none,"['iso-14064', 'iso-14001']",partial,[],"iso-14064,iso-14001",,measure,ghg-protocol,95
+Synthetic Org #498,transport,50-250,na,low,advanced,"['iso-14064', 'iso-50001', 'iso-45001']",none,"['net-zero', 'sbti', 'sdg']","iso-14064,iso-50001,iso-45001","net-zero,sbti,sdg",improve,sbti,92
+Synthetic Org #499,agriculture,1000-5000,global,moderate,advanced,['iso-50001'],full,[],iso-50001,,report,issb,83
+Synthetic Org #500,healthcare,5000+,india,moderate,advanced,"['iso-14001', 'iso-50001', 'iso-14064']",none,[],"iso-14001,iso-50001,iso-14064",,report,brsr,93
+Synthetic Org #501,chemicals,1-50,na,very-high,basic,['iso-14064'],full,"['sbti', 'net-zero', 'sdg']",iso-14064,"sbti,net-zero,sdg",improve,sbti,94
+Synthetic Org #502,energy,1-50,india,high,advanced,"['iso-45001', 'iso-50001']",full,['sbti'],"iso-45001,iso-50001",sbti,report,brsr,90
+Synthetic Org #503,healthcare,50-250,uk,very-high,advanced,['iso-50001'],none,"['stakeholder-trust', 'net-zero']",iso-50001,"stakeholder-trust,net-zero",improve,sbti,97
+Synthetic Org #504,financial,1-50,india,high,basic,"['iso-45001', 'iso-14064']",none,"['sdg', 'renewables', 'sbti']","iso-45001,iso-14064","sdg,renewables,sbti",improve,sbti,94
+Synthetic Org #505,healthcare,1000-5000,latam,moderate,basic,"['iso-14064', 'iso-45001', 'iso-14001']",partial,"['net-zero', 'sdg']","iso-14064,iso-45001,iso-14001","net-zero,sdg",improve,sbti,94
+Synthetic Org #506,energy,1000-5000,apac,moderate,advanced,[],full,['renewables'],,renewables,manage,iso-14001,89
+Synthetic Org #507,technology,5000+,india,low,advanced,[],partial,['net-zero'],,net-zero,improve,sbti,97
+Synthetic Org #508,consumer-goods,250-1000,global,moderate,basic,['iso-50001'],partial,"['sdg', 'sbti', 'stakeholder-trust']",iso-50001,"sdg,sbti,stakeholder-trust",improve,sbti,93
+Synthetic Org #509,construction,1000-5000,apac,moderate,none,[],full,['sbti'],,sbti,measure,ghg-protocol,98
+Synthetic Org #510,construction,50-250,latam,moderate,advanced,[],partial,[],,,manage,iso-14001,88
+Synthetic Org #511,energy,1-50,apac,very-high,advanced,"['iso-14001', 'iso-50001']",none,['stakeholder-trust'],"iso-14001,iso-50001",stakeholder-trust,improve,renewable-energy-plan,79
+Synthetic Org #512,technology,1000-5000,india,high,basic,"['iso-45001', 'iso-50001']",none,['stakeholder-trust'],"iso-45001,iso-50001",stakeholder-trust,measure,ghg-protocol,87
+Synthetic Org #513,chemicals,1-50,india,very-high,basic,[],full,"['sdg', 'renewables', 'stakeholder-trust']",,"sdg,renewables,stakeholder-trust",report,brsr,94
+Synthetic Org #514,chemicals,1000-5000,global,very-high,basic,[],full,[],,,measure,ghg-protocol,90
+Synthetic Org #515,construction,1000-5000,india,low,basic,"['iso-45001', 'iso-14001']",partial,"['sdg', 'sbti', 'renewables']","iso-45001,iso-14001","sdg,sbti,renewables",improve,sbti,97
+Synthetic Org #516,agriculture,5000+,na,high,none,['iso-50001'],partial,"['sdg', 'stakeholder-trust']",iso-50001,"sdg,stakeholder-trust",measure,ghg-protocol,99
+Synthetic Org #517,consumer-goods,250-1000,uk,moderate,advanced,"['iso-50001', 'iso-14001']",none,['sbti'],"iso-50001,iso-14001",sbti,improve,sbti,92
+Synthetic Org #518,financial,1000-5000,latam,very-high,none,"['iso-50001', 'iso-14064', 'iso-14001']",none,['renewables'],"iso-50001,iso-14064,iso-14001",renewables,measure,ghg-protocol,97
+Synthetic Org #519,agriculture,50-250,latam,high,basic,['iso-14001'],partial,"['net-zero', 'sbti']",iso-14001,"net-zero,sbti",improve,sbti,98
+Synthetic Org #520,manufacturing,50-250,latam,high,basic,[],full,"['sdg', 'stakeholder-trust']",,"sdg,stakeholder-trust",measure,ghg-protocol,94
+Synthetic Org #521,technology,250-1000,india,high,basic,['iso-14001'],none,['stakeholder-trust'],iso-14001,stakeholder-trust,measure,ghg-protocol,93
+Synthetic Org #522,construction,5000+,india,moderate,basic,['iso-14064'],partial,"['net-zero', 'renewables']",iso-14064,"net-zero,renewables",improve,sbti,96
+Synthetic Org #523,healthcare,250-1000,uk,moderate,none,['iso-14064'],full,"['stakeholder-trust', 'renewables', 'net-zero']",iso-14064,"stakeholder-trust,renewables,net-zero",measure,ghg-protocol,99
+Synthetic Org #524,energy,50-250,na,moderate,basic,"['iso-45001', 'iso-14064', 'iso-50001']",partial,"['renewables', 'sdg', 'sbti']","iso-45001,iso-14064,iso-50001","renewables,sdg,sbti",improve,sbti,94
+Synthetic Org #525,technology,5000+,india,very-high,basic,[],none,[],,,measure,ghg-protocol,89
+Synthetic Org #526,chemicals,50-250,apac,high,advanced,"['iso-14001', 'iso-14064', 'iso-45001']",full,"['net-zero', 'stakeholder-trust']","iso-14001,iso-14064,iso-45001","net-zero,stakeholder-trust",improve,sbti,91
+Synthetic Org #527,energy,1000-5000,india,low,none,"['iso-14001', 'iso-14064']",partial,['stakeholder-trust'],"iso-14001,iso-14064",stakeholder-trust,measure,ghg-protocol,94
+Synthetic Org #528,chemicals,1-50,apac,very-high,basic,[],none,['renewables'],,renewables,measure,ghg-protocol,88
+Synthetic Org #529,chemicals,50-250,india,moderate,none,"['iso-45001', 'iso-50001', 'iso-14064']",none,"['stakeholder-trust', 'sdg']","iso-45001,iso-50001,iso-14064","stakeholder-trust,sdg",measure,ghg-protocol,97
+Synthetic Org #530,financial,1000-5000,eu,moderate,advanced,['iso-14064'],full,"['stakeholder-trust', 'sdg', 'sbti']",iso-14064,"stakeholder-trust,sdg,sbti",improve,sbti,94
+Synthetic Org #531,agriculture,5000+,eu,low,basic,['iso-14064'],partial,['sbti'],iso-14064,sbti,report,csrd,94
+Synthetic Org #532,transport,1-50,global,moderate,basic,['iso-14001'],partial,"['renewables', 'sdg']",iso-14001,"renewables,sdg",measure,ghg-protocol,91
+Synthetic Org #533,manufacturing,1000-5000,latam,high,advanced,[],none,"['sdg', 'sbti', 'renewables']",,"sdg,sbti,renewables",manage,iso-14001,92
+Synthetic Org #534,financial,1000-5000,uk,moderate,none,"['iso-14064', 'iso-50001', 'iso-14001']",full,['net-zero'],"iso-14064,iso-50001,iso-14001",net-zero,improve,sbti,93
+Synthetic Org #535,consumer-goods,50-250,india,high,basic,"['iso-45001', 'iso-50001', 'iso-14001']",full,[],"iso-45001,iso-50001,iso-14001",,measure,ghg-protocol,92
+Synthetic Org #536,chemicals,50-250,na,low,advanced,"['iso-14064', 'iso-50001']",partial,"['renewables', 'sbti', 'stakeholder-trust']","iso-14064,iso-50001","renewables,sbti,stakeholder-trust",improve,sbti,95
+Synthetic Org #537,manufacturing,50-250,global,low,none,['iso-45001'],none,['renewables'],iso-45001,renewables,measure,ghg-protocol,97
+Synthetic Org #538,manufacturing,50-250,global,moderate,none,[],partial,['renewables'],,renewables,measure,ghg-protocol,95
+Synthetic Org #539,transport,1000-5000,na,very-high,advanced,['iso-14001'],none,['net-zero'],iso-14001,net-zero,improve,sbti,92
+Synthetic Org #540,transport,1000-5000,global,very-high,none,['iso-14064'],none,[],iso-14064,,measure,ghg-protocol,99
+Synthetic Org #541,energy,50-250,uk,very-high,none,[],full,['renewables'],,renewables,measure,ghg-protocol,97
+Synthetic Org #542,energy,5000+,apac,moderate,basic,"['iso-45001', 'iso-50001', 'iso-14001']",partial,[],"iso-45001,iso-50001,iso-14001",,measure,ghg-protocol,88
+Synthetic Org #543,financial,5000+,global,high,basic,['iso-50001'],full,['net-zero'],iso-50001,net-zero,improve,sbti,97
+Synthetic Org #544,construction,1-50,eu,very-high,basic,[],none,['stakeholder-trust'],,stakeholder-trust,report,csrd,99
+Synthetic Org #545,energy,1000-5000,latam,moderate,none,"['iso-14064', 'iso-45001']",none,"['sbti', 'sdg', 'net-zero']","iso-14064,iso-45001","sbti,sdg,net-zero",measure,ghg-protocol,97
+Synthetic Org #546,construction,50-250,uk,low,advanced,['iso-14001'],full,[],iso-14001,,report,gri,87
+Synthetic Org #547,technology,50-250,apac,low,none,[],partial,['stakeholder-trust'],,stakeholder-trust,measure,ghg-protocol,92
+Synthetic Org #548,technology,1000-5000,apac,moderate,none,['iso-45001'],full,['sdg'],iso-45001,sdg,measure,ghg-protocol,99
+Synthetic Org #549,manufacturing,1000-5000,apac,very-high,advanced,"['iso-14064', 'iso-14001']",partial,"['sbti', 'sdg', 'stakeholder-trust']","iso-14064,iso-14001","sbti,sdg,stakeholder-trust",improve,sbti,92
+Synthetic Org #550,agriculture,250-1000,latam,moderate,none,[],full,"['sdg', 'stakeholder-trust']",,"sdg,stakeholder-trust",measure,ghg-protocol,95
+Synthetic Org #551,financial,250-1000,uk,low,advanced,['iso-50001'],full,[],iso-50001,,report,gri,75
+Synthetic Org #552,healthcare,250-1000,latam,moderate,basic,[],full,"['renewables', 'sbti', 'sdg']",,"renewables,sbti,sdg",improve,sbti,96
+Synthetic Org #553,agriculture,5000+,eu,high,basic,"['iso-45001', 'iso-14001', 'iso-14064']",partial,"['net-zero', 'stakeholder-trust', 'renewables']","iso-45001,iso-14001,iso-14064","net-zero,stakeholder-trust,renewables",improve,sbti,95
+Synthetic Org #554,chemicals,1-50,eu,low,basic,[],none,[],,,report,csrd,93
+Synthetic Org #555,healthcare,1000-5000,apac,very-high,advanced,"['iso-45001', 'iso-14001', 'iso-50001']",full,['stakeholder-trust'],"iso-45001,iso-14001,iso-50001",stakeholder-trust,report,issb,82
+Synthetic Org #556,energy,1-50,eu,very-high,none,"['iso-14001', 'iso-50001', 'iso-45001']",partial,['net-zero'],"iso-14001,iso-50001,iso-45001",net-zero,measure,ghg-protocol,95
+Synthetic Org #557,healthcare,250-1000,india,low,advanced,['iso-14001'],none,['stakeholder-trust'],iso-14001,stakeholder-trust,report,brsr,88
+Synthetic Org #558,energy,1-50,apac,moderate,advanced,[],partial,['stakeholder-trust'],,stakeholder-trust,manage,iso-14001,84
+Synthetic Org #559,construction,5000+,apac,moderate,advanced,"['iso-14064', 'iso-45001']",full,[],"iso-14064,iso-45001",,manage,iso-14001,88
+Synthetic Org #560,healthcare,250-1000,apac,very-high,advanced,['iso-14001'],full,['sbti'],iso-14001,sbti,improve,sbti,91
+Synthetic Org #561,financial,1000-5000,india,high,advanced,"['iso-14064', 'iso-50001']",none,['stakeholder-trust'],"iso-14064,iso-50001",stakeholder-trust,report,brsr,94
+Synthetic Org #562,technology,250-1000,uk,very-high,advanced,"['iso-50001', 'iso-45001']",partial,"['sbti', 'renewables', 'sdg']","iso-50001,iso-45001","sbti,renewables,sdg",improve,sbti,99
+Synthetic Org #563,transport,250-1000,uk,very-high,basic,"['iso-14001', 'iso-50001', 'iso-14064']",none,"['sbti', 'sdg', 'net-zero']","iso-14001,iso-50001,iso-14064","sbti,sdg,net-zero",improve,sbti,94
+Synthetic Org #564,transport,50-250,eu,high,none,['iso-50001'],full,[],iso-50001,,measure,ghg-protocol,92
+Synthetic Org #565,manufacturing,1000-5000,na,moderate,none,['iso-50001'],partial,['sdg'],iso-50001,sdg,measure,ghg-protocol,99
+Synthetic Org #566,transport,1-50,india,very-high,advanced,"['iso-14001', 'iso-45001', 'iso-50001']",none,"['sbti', 'renewables']","iso-14001,iso-45001,iso-50001","sbti,renewables",improve,sbti,94
+Synthetic Org #567,healthcare,1-50,india,high,none,"['iso-14064', 'iso-14001']",full,[],"iso-14064,iso-14001",,measure,ghg-protocol,99
+Synthetic Org #568,technology,250-1000,latam,very-high,basic,[],none,"['net-zero', 'renewables', 'stakeholder-trust']",,"net-zero,renewables,stakeholder-trust",improve,sbti,98
+Synthetic Org #569,transport,5000+,global,high,advanced,[],full,['stakeholder-trust'],,stakeholder-trust,manage,iso-14001,91
+Synthetic Org #570,construction,50-250,global,very-high,basic,"['iso-14001', 'iso-14064']",full,"['sdg', 'renewables']","iso-14001,iso-14064","sdg,renewables",measure,ghg-protocol,89
+Synthetic Org #571,chemicals,50-250,na,low,basic,"['iso-14001', 'iso-45001', 'iso-50001']",full,['net-zero'],"iso-14001,iso-45001,iso-50001",net-zero,improve,sbti,95
+Synthetic Org #572,consumer-goods,5000+,uk,moderate,none,"['iso-50001', 'iso-14064']",partial,"['stakeholder-trust', 'sbti']","iso-50001,iso-14064","stakeholder-trust,sbti",measure,ghg-protocol,98
+Synthetic Org #573,financial,5000+,apac,moderate,none,['iso-14064'],none,['stakeholder-trust'],iso-14064,stakeholder-trust,measure,ghg-protocol,95
+Synthetic Org #574,energy,1-50,apac,very-high,basic,['iso-50001'],partial,['sdg'],iso-50001,sdg,measure,ghg-protocol,88
+Synthetic Org #575,healthcare,1-50,latam,high,none,"['iso-14064', 'iso-45001']",partial,['renewables'],"iso-14064,iso-45001",renewables,measure,ghg-protocol,97
+Synthetic Org #576,manufacturing,50-250,eu,high,none,[],full,[],,,measure,ghg-protocol,95
+Synthetic Org #577,manufacturing,50-250,india,moderate,basic,['iso-14001'],none,['renewables'],iso-14001,renewables,report,brsr,91
+Synthetic Org #578,agriculture,1-50,na,moderate,advanced,[],full,['stakeholder-trust'],,stakeholder-trust,report,gri,75
+Synthetic Org #579,financial,250-1000,india,very-high,advanced,[],full,[],,,report,brsr,87
+Synthetic Org #580,consumer-goods,5000+,apac,low,basic,[],none,['sbti'],,sbti,improve,sbti,93
+Synthetic Org #581,healthcare,250-1000,global,very-high,advanced,[],none,"['sdg', 'stakeholder-trust']",,"sdg,stakeholder-trust",improve,sdgs,76
+Synthetic Org #582,energy,1-50,na,very-high,none,"['iso-14001', 'iso-50001']",partial,"['stakeholder-trust', 'net-zero']","iso-14001,iso-50001","stakeholder-trust,net-zero",improve,sbti,95
+Synthetic Org #583,chemicals,50-250,india,very-high,advanced,[],full,[],,,report,brsr,89
+Synthetic Org #584,construction,5000+,na,high,basic,"['iso-50001', 'iso-14001', 'iso-14064']",partial,['sdg'],"iso-50001,iso-14001,iso-14064",sdg,measure,ghg-protocol,87
+Synthetic Org #585,transport,50-250,india,high,none,['iso-14064'],full,[],iso-14064,,measure,ghg-protocol,98
+Synthetic Org #586,financial,250-1000,eu,moderate,basic,"['iso-50001', 'iso-14001', 'iso-14064']",partial,"['stakeholder-trust', 'sbti', 'renewables']","iso-50001,iso-14001,iso-14064","stakeholder-trust,sbti,renewables",report,csrd,95
+Synthetic Org #587,construction,5000+,eu,very-high,basic,['iso-14064'],full,"['sbti', 'stakeholder-trust', 'sdg']",iso-14064,"sbti,stakeholder-trust,sdg",improve,sbti,97
+Synthetic Org #588,chemicals,5000+,india,moderate,none,"['iso-50001', 'iso-14064', 'iso-14001']",partial,"['sbti', 'sdg', 'net-zero']","iso-50001,iso-14064,iso-14001","sbti,sdg,net-zero",measure,ghg-protocol,98
+Synthetic Org #589,financial,5000+,apac,low,none,[],partial,[],,,measure,ghg-protocol,93
+Synthetic Org #590,technology,1000-5000,uk,high,basic,"['iso-45001', 'iso-14001', 'iso-14064']",full,[],"iso-45001,iso-14001,iso-14064",,measure,ghg-protocol,86
+Synthetic Org #591,chemicals,50-250,global,high,advanced,"['iso-50001', 'iso-45001']",full,['sbti'],"iso-50001,iso-45001",sbti,improve,sbti,92
+Synthetic Org #592,manufacturing,250-1000,global,very-high,none,"['iso-14064', 'iso-45001']",full,['sbti'],"iso-14064,iso-45001",sbti,measure,ghg-protocol,95
+Synthetic Org #593,consumer-goods,1000-5000,uk,moderate,none,[],none,[],,,measure,ghg-protocol,96
+Synthetic Org #594,consumer-goods,1-50,na,very-high,none,"['iso-50001', 'iso-14001', 'iso-45001']",full,['renewables'],"iso-50001,iso-14001,iso-45001",renewables,measure,ghg-protocol,96
+Synthetic Org #595,healthcare,1000-5000,apac,high,basic,['iso-14064'],none,[],iso-14064,,measure,ghg-protocol,90
+Synthetic Org #596,healthcare,1000-5000,apac,high,basic,"['iso-14001', 'iso-45001', 'iso-14064']",full,"['renewables', 'net-zero']","iso-14001,iso-45001,iso-14064","renewables,net-zero",measure,ghg-protocol,95
+Synthetic Org #597,construction,5000+,india,very-high,advanced,"['iso-14064', 'iso-45001']",none,[],"iso-14064,iso-45001",,report,brsr,90
+Synthetic Org #598,construction,250-1000,uk,very-high,basic,['iso-50001'],partial,"['sdg', 'net-zero']",iso-50001,"sdg,net-zero",improve,sbti,95
+Synthetic Org #599,financial,50-250,uk,very-high,none,"['iso-14001', 'iso-14064']",full,"['stakeholder-trust', 'sbti', 'renewables']","iso-14001,iso-14064","stakeholder-trust,sbti,renewables",improve,sbti,98
+Synthetic Org #600,consumer-goods,250-1000,uk,low,none,"['iso-50001', 'iso-14064']",partial,[],"iso-50001,iso-14064",,measure,ghg-protocol,98
