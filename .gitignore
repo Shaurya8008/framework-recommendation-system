@@ -51,3 +51,10 @@ dist-ssr/
 # IDE
 .vscode/
 .idea/
+
+# Local Dev Deployments
+.vercel/
+.apphosting/
+.wrangler/
+.github/
+

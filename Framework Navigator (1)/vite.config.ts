@@ -7,9 +7,32 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  server: {
+    host: true,
+    allowedHosts: ["f37c550e5cd024.lhr.life", ".lhr.life", "lhr.life", ".localhost.run", "localhost.run", ".pinggy.link", "localhost", "127.0.0.1"],
+    proxy: {
+      "/recommend": "http://localhost:8000",
+      "/profiles": "http://localhost:8000",
+      "/frameworks": "http://localhost:8000",
+    },
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+  },
+  nitro: {
+    preset: "firebase-app-hosting",
+  },
+  vite: {
+    server: {
+      host: true,
+      allowedHosts: ["f37c550e5cd024.lhr.life", ".lhr.life", "lhr.life", ".localhost.run", "localhost.run", ".pinggy.link", "localhost", "127.0.0.1"],
+      proxy: {
+        "/recommend": "http://localhost:8000",
+        "/profiles": "http://localhost:8000",
+        "/frameworks": "http://localhost:8000",
+      },
+    },
   },
 });
