@@ -18,8 +18,10 @@ services:
     env: node
     plan: free
     buildCommand: "cd 'Framework Navigator (1)' && npm install && BUILD_TARGET=render npm run build"
-    startCommand: "cd 'Framework Navigator (1)' && PORT=$PORT node .output/server/index.mjs"
+    startCommand: "cd 'Framework Navigator (1)' && node .output/server/index.mjs"
     envVars:
+      - key: NODE_VERSION
+        value: "22"
       - key: VITE_RECOMMEND_API
         fromService:
           type: web
