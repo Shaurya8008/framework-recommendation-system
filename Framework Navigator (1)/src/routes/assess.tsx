@@ -31,7 +31,7 @@ function AssessPage() {
   async function handleSubmit(profile: OrgProfile) {
     setLoading(true);
     try {
-      const result = await getRecommendations(profile);
+      const result = await getRecommendations({ data: profile });
       saveResult(profile, result);
       navigate({ to: "/results" });
     } catch {

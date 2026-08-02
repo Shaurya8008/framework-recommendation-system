@@ -48,33 +48,33 @@ export const emptyProfile: OrgProfile = {
 export const getRecommendations = createServerFn({ method: "POST" })
   .validator((d: OrgProfile) => d)
   .handler(async ({ data: profile }) => {
-    let endpoint = process.env.VITE_RECOMMEND_API || RECOMMEND_ENDPOINT || "http://localhost:8000/recommend";
-    
-    if (endpoint && !endpoint.startsWith("http")) {
-      endpoint = `http://${endpoint}`;
-    }
-    if (endpoint && !endpoint.endsWith("/recommend")) {
-      // Remove trailing slash if present
-      endpoint = endpoint.replace(/\/$/, "");
-      endpoint = `${endpoint}/recommend`;
-    }
-
+    const p = profile || emptyProfile;
     try {
+      let endpoint = process.env.VITE_RECOMMEND_API || RECOMMEND_ENDPOINT || "http://localhost:8000/recommend";
+      
+      if (endpoint && !endpoint.startsWith("http")) {
+        endpoint = `http://${endpoint}`;
+      }
+      if (endpoint && !endpoint.endsWith("/recommend")) {
+        endpoint = endpoint.replace(/\/$/, "");
+        endpoint = `${endpoint}/recommend`;
+      }
+
       const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(profile),
+        body: JSON.stringify(p),
         signal: AbortSignal.timeout(8000),
       });
       if (res.ok) {
         return (await res.json()) as RecommendResponse;
       }
       console.warn(`[Recommend] Backend request to ${endpoint} returned ${res.status}. Using fallback scoring engine.`);
+      return mockRecommend(p);
     } catch (err) {
-      console.warn(`[Recommend] Backend request to ${endpoint} failed (${String(err)}). Using fallback scoring engine.`);
+      console.warn(`[Recommend] Backend request failed (${String(err)}). Using fallback scoring engine.`);
+      return mockRecommend(p);
     }
-
-    return mockRecommend(profile);
   });
 
 /* ---------------- mock scoring engine ---------------- */
