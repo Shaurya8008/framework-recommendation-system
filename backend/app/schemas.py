@@ -99,6 +99,8 @@ class RecommendRequest(BaseModel):
                 data["organization_name"] = data.get("organizationName")
             if "energyUse" in data and "energy_use_level" not in data:
                 data["energy_use_level"] = data.get("energyUse")
+            if "emissionsMaturity" in data and "emissions_maturity" not in data:
+                data["emissions_maturity"] = data.get("emissionsMaturity")
             if "disclosure" in data and "disclosure_level" not in data:
                 data["disclosure_level"] = data.get("disclosure")
             if "id" in data and "profile_id" not in data:
