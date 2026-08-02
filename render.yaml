@@ -1,0 +1,32 @@
+services:
+  # 1. FastAPI Backend (ML & API Layer)
+  - type: web
+    name: frameworkfit-backend
+    env: docker
+    dockerContext: backend
+    dockerfilePath: Dockerfile
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: frameworkfit-db
+          property: connectionString
+
+  # 2. Vite/React SSR Frontend (TanStack Start)
+  - type: web
+    name: frameworkfit-frontend
+    env: node
+    plan: free
+    buildCommand: "cd 'Framework Navigator (1)' && npm install && BUILD_TARGET=render npm run build"
+    startCommand: "cd 'Framework Navigator (1)' && PORT=$PORT node .output/server/index.mjs"
+    envVars:
+      - key: VITE_RECOMMEND_API
+        fromService:
+          name: frameworkfit-backend
+          value: url
+          # Construct the full recommendation endpoint url
+          suffix: /recommend
+
+databases:
+  - name: frameworkfit-db
+    plan: free
