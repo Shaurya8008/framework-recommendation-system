@@ -22,10 +22,9 @@ services:
     envVars:
       - key: VITE_RECOMMEND_API
         fromService:
+          type: web
           name: frameworkfit-backend
-          value: url
-          # Construct the full recommendation endpoint url
-          suffix: /recommend
+          property: hostport
 
 databases:
   - name: frameworkfit-db
