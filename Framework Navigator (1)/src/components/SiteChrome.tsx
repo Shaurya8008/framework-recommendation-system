@@ -7,7 +7,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <Link to="/" className="flex items-center gap-2.5">
           <span className="flex size-9 items-center justify-center overflow-hidden rounded-lg bg-emerald-900/10 p-1 border border-emerald-500/20">
-            <img src="/logo.png" alt="FrameworkFit Logo" className="size-full object-contain" />
+            <img src="/logo.png?v=2" alt="FrameworkFit Logo" className="size-full object-contain" />
           </span>
           <span className="font-display text-[1.05rem] font-semibold tracking-tight text-navy">
             FrameworkFit
@@ -39,7 +39,7 @@ export function SiteFooter() {
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 text-sm text-muted-foreground">
         <div className="flex items-center gap-2.5">
           <span className="flex size-7 items-center justify-center overflow-hidden rounded-md bg-emerald-900/10 p-0.5 border border-emerald-500/20">
-            <img src="/logo.png" alt="FrameworkFit Logo" className="size-full object-contain" />
+            <img src="/logo.png?v=2" alt="FrameworkFit Logo" className="size-full object-contain" />
           </span>
           <p className="font-medium text-navy">FrameworkFit</p>
         </div>

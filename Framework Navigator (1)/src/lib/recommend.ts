@@ -59,28 +59,22 @@ export const getRecommendations = createServerFn({ method: "POST" })
       endpoint = `${endpoint}/recommend`;
     }
 
-    if (!endpoint || endpoint.endsWith("/recommend") && (endpoint.includes("localhost") || endpoint.includes("127.0.0.1"))) {
-      // In development/local mode, fallback to mock if backend is not reachable or not specified
-      try {
-        const res = await fetch(endpoint || "http://localhost:8000/recommend", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(profile),
-        });
-        if (res.ok) return (await res.json()) as RecommendResponse;
-      } catch {
-        // Fallback to local mock if backend fetch failed
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(profile),
+        signal: AbortSignal.timeout(8000),
+      });
+      if (res.ok) {
+        return (await res.json()) as RecommendResponse;
       }
-      return mockRecommend(profile);
+      console.warn(`[Recommend] Backend request to ${endpoint} returned ${res.status}. Using fallback scoring engine.`);
+    } catch (err) {
+      console.warn(`[Recommend] Backend request to ${endpoint} failed (${String(err)}). Using fallback scoring engine.`);
     }
 
-    const res = await fetch(endpoint, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(profile),
-    });
-    if (!res.ok) throw new Error(`Recommendation request failed (${res.status})`);
-    return (await res.json()) as RecommendResponse;
+    return mockRecommend(profile);
   });
 
 /* ---------------- mock scoring engine ---------------- */
