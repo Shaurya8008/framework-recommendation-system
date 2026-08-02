@@ -6,8 +6,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <Link to="/" className="flex items-center gap-2.5">
-          <span className="flex size-8 items-center justify-center rounded-lg bg-primary">
-            <Leaf className="size-4 text-primary-foreground" />
+          <span className="flex size-9 items-center justify-center overflow-hidden rounded-lg bg-emerald-900/10 p-1 border border-emerald-500/20">
+            <img src="/logo.png" alt="FrameworkFit Logo" className="size-full object-contain" />
           </span>
           <span className="font-display text-[1.05rem] font-semibold tracking-tight text-navy">
             FrameworkFit
@@ -36,8 +36,13 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-border/70 py-10">
-      <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 text-sm text-muted-foreground">
-        <p className="font-medium text-navy">FrameworkFit</p>
+      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 text-sm text-muted-foreground">
+        <div className="flex items-center gap-2.5">
+          <span className="flex size-7 items-center justify-center overflow-hidden rounded-md bg-emerald-900/10 p-0.5 border border-emerald-500/20">
+            <img src="/logo.png" alt="FrameworkFit Logo" className="size-full object-contain" />
+          </span>
+          <p className="font-medium text-navy">FrameworkFit</p>
+        </div>
         <p className="max-w-xl">
           Guidance only. Framework applicability depends on jurisdiction, listing status and
           value-chain obligations — confirm scope with your assurance provider.
