@@ -170,11 +170,13 @@ function RadioCards({
 export function ProfileForm({
   onSubmit,
   loading,
+  initialProfile,
 }: {
   onSubmit: (profile: OrgProfile) => void;
   loading?: boolean;
+  initialProfile?: OrgProfile;
 }) {
-  const [profile, setProfile] = useState<OrgProfile>(emptyProfile);
+  const [profile, setProfile] = useState<OrgProfile>(initialProfile || emptyProfile);
   const set = <K extends keyof OrgProfile>(key: K, value: OrgProfile[K]) =>
     setProfile((p) => ({ ...p, [key]: value }));
   const toggle = (key: "certifications" | "goals", value: string) =>

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from app.db.database import get_db
-from app.db.models import OrgProfile, Recommendation
+from app.db.models import OrgProfile, Recommendation, Framework
 from app.schemas import RecommendRequest, RecommendResponse, RecommendationItem
 from src.pipeline import RecommendationPipeline
 
@@ -14,9 +14,9 @@ _pipeline = RecommendationPipeline(models_dir="models")
 @router.post("/recommend", response_model=RecommendResponse)
 def get_recommendations(req: RecommendRequest, db: Session = Depends(get_db)):
     """
-    Takes an organization profile (or profile_id), runs the 2-stage candidate generation ->
-    scoring -> re-ranking pipeline, returns ranked frameworks grouped by stage, each with
-    a numeric score and short plain-language reason string.
+    Takes an organization profile (or profile_id), runs the 4-stage
+    normalize → candidate generation → scoring → re-ranking pipeline,
+    returns ranked frameworks grouped by stage with explainability.
     """
     profile_id = req.profile_id
     if profile_id is not None:
@@ -28,7 +28,7 @@ def get_recommendations(req: RecommendRequest, db: Session = Depends(get_db)):
         # Check if industry is present in req
         if not req.industry:
             raise HTTPException(status_code=422, detail="Either profile_id or full organization profile fields are required")
-        # Save or update inline profile
+        # Save inline profile
         profile_dict = req.to_profile_dict()
         db_profile = OrgProfile(**profile_dict)
         db.add(db_profile)
@@ -45,6 +45,7 @@ def get_recommendations(req: RecommendRequest, db: Session = Depends(get_db)):
 def get_past_recommendations(profile_id: int, db: Session = Depends(get_db)):
     """
     Fetch past recommendation history for an organization profile ID.
+    Returns enriched recommendation items with explainability fields.
     """
     profile = db.query(OrgProfile).filter(OrgProfile.id == profile_id).first()
     if not profile:
@@ -66,8 +67,16 @@ def get_past_recommendations(profile_id: int, db: Session = Depends(get_db)):
             name=r.framework.name if r.framework else r.framework_slug,
             stage=r.stage,
             description=r.framework.description if r.framework else "",
-            score=int(round(r.score)),
-            reason=r.reason
+            score=round(r.score, 1),
+            reason=r.reason,
+            why_recommended=r.why_recommended or r.reason,
+            why_now=r.why_now or "",
+            prerequisites=r.framework.prerequisites if r.framework else [],
+            missing_prerequisites=r.missing_prerequisites or [],
+            depends_on=r.framework.depends_on if r.framework else [],
+            recommended_next=r.recommended_next or [],
+            recommendation_type=r.recommendation_type or "foundational",
+            confidence_label=r.confidence_label or "medium",
         ))
 
     return items

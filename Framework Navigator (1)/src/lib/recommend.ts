@@ -1,4 +1,4 @@
-import { FRAMEWORKS, type StageId } from "./frameworks";
+import { type StageId, getFrameworks } from "./frameworks";
 import { createServerFn } from "@tanstack/react-start";
 
 /**
@@ -70,10 +70,10 @@ export const getRecommendations = createServerFn({ method: "POST" })
         return (await res.json()) as RecommendResponse;
       }
       console.warn(`[Recommend] Backend request to ${endpoint} returned ${res.status}. Using fallback scoring engine.`);
-      return mockRecommend(p);
+      return await mockRecommend(p);
     } catch (err) {
       console.warn(`[Recommend] Backend request failed (${String(err)}). Using fallback scoring engine.`);
-      return mockRecommend(p);
+      return await mockRecommend(p);
     }
   });
 
@@ -81,7 +81,8 @@ export const getRecommendations = createServerFn({ method: "POST" })
 
 const HEAVY_INDUSTRIES = ["manufacturing", "energy", "chemicals", "construction", "transport"];
 
-function mockRecommend(p: OrgProfile): RecommendResponse {
+async function mockRecommend(p: OrgProfile): Promise<RecommendResponse> {
+  const FRAMEWORKS = await getFrameworks();
   const certified = (slug: string) => p.certifications.includes(slug);
   const goal = (g: string) => p.goals.includes(g);
   const heavy = HEAVY_INDUSTRIES.includes(p.industry);
@@ -98,7 +99,7 @@ function mockRecommend(p: OrgProfile): RecommendResponse {
       slug: f.slug,
       name: f.name,
       stage: f.stage,
-      description: f.summary,
+      description: f.summary || f.description,
       score: Math.max(10, Math.min(99, Math.round(score))),
       reason,
     });
@@ -266,4 +267,45 @@ export function loadResult(): { profile: OrgProfile; result: RecommendResponse }
   } catch {
     return null;
   }
+}
+
+/* --------------- autofill API --------------- */
+
+export type AutofillFieldSuggestion = {
+  field: string;
+  suggested_value: any;
+  confidence: number;
+  source: string;
+  source_snippet?: string;
+  reason?: string;
+};
+
+export type DocumentUploadResponse = {
+  document_id: number;
+  status: string;
+  overall_confidence: number;
+  suggestions: AutofillFieldSuggestion[];
+  missing_fields: string[];
+};
+
+export async function uploadDocumentForAutofill(file: File): Promise<DocumentUploadResponse> {
+  let endpoint = process.env.VITE_RECOMMEND_API || import.meta.env.VITE_RECOMMEND_API || "http://localhost:8000";
+  if (endpoint && !endpoint.startsWith("http")) endpoint = `http://${endpoint}`;
+  if (endpoint && endpoint.endsWith("/recommend")) endpoint = endpoint.replace("/recommend", "");
+  if (endpoint && endpoint.endsWith("/")) endpoint = endpoint.slice(0, -1);
+  
+  const formData = new FormData();
+  formData.append("file", file);
+
+  const res = await fetch(`${endpoint}/documents/upload`, {
+    method: "POST",
+    body: formData,
+  });
+
+  if (!res.ok) {
+    const errorText = await res.text();
+    throw new Error(`Upload failed: ${errorText}`);
+  }
+
+  return (await res.json()) as DocumentUploadResponse;
 }

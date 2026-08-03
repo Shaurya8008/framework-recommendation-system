@@ -3,11 +3,6 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   server: {
     host: true,
-    proxy: {
-      "/recommend": "http://localhost:8000",
-      "/profiles": "http://localhost:8000",
-      "/frameworks": "http://localhost:8000",
-    },
   },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
@@ -20,11 +15,6 @@ export default defineConfig({
   vite: {
     server: {
       host: true,
-      proxy: {
-        "/recommend": "http://localhost:8000",
-        "/profiles": "http://localhost:8000",
-        "/frameworks": "http://localhost:8000",
-      },
     },
   },
 });

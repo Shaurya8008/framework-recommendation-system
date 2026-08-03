@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.db.database import engine, Base, SessionLocal
 from app.db.seed import seed_frameworks
-from app.routers import profiles, frameworks, recommend
+from app.routers import profiles, frameworks, recommend, documents
 
 
 @asynccontextmanager
@@ -38,6 +38,7 @@ app.add_middleware(
 app.include_router(profiles.router)
 app.include_router(frameworks.router)
 app.include_router(recommend.router)
+app.include_router(documents.router)
 
 
 @app.get("/", tags=["health"])

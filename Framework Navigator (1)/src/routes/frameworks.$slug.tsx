@@ -1,12 +1,12 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, Check, ListChecks, Users } from "lucide-react";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
-import { FRAMEWORK_MAP, STAGE_MAP, type FrameworkInfo } from "@/lib/frameworks";
+import { STAGE_MAP, getFramework, type FrameworkInfo } from "@/lib/frameworks";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/frameworks/$slug")({
-  loader: ({ params }): { framework: FrameworkInfo } => {
-    const framework = FRAMEWORK_MAP[params.slug];
+  loader: async ({ params }): Promise<{ framework: FrameworkInfo }> => {
+    const framework = await getFramework({ data: params.slug });
     if (!framework) throw notFound();
     return { framework };
   },
