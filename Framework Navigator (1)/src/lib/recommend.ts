@@ -292,6 +292,15 @@ export type DocumentUploadResponse = {
 export const getBackendUrl = createServerFn({ method: "GET" })
   .handler(async () => {
     let endpoint = process.env.VITE_RECOMMEND_API || "http://localhost:8000";
+
+    // Render's fromService url property returns internal URLs like
+    // "http://frameworkfit-backend:10000" which only work server-to-server.
+    // Convert to the public HTTPS URL for client-side use.
+    const renderInternalMatch = endpoint.match(/^https?:\/\/([^:]+):\d+$/);
+    if (renderInternalMatch && !endpoint.includes('.') && !endpoint.includes('localhost')) {
+      endpoint = `https://${renderInternalMatch[1]}.onrender.com`;
+    }
+
     if (endpoint && !endpoint.startsWith("http")) endpoint = `http://${endpoint}`;
     if (endpoint && endpoint.endsWith("/recommend")) endpoint = endpoint.replace("/recommend", "");
     if (endpoint && endpoint.endsWith("/")) endpoint = endpoint.slice(0, -1);
