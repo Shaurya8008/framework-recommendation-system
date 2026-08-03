@@ -288,24 +288,24 @@ export type DocumentUploadResponse = {
   missing_fields: string[];
 };
 
-export async function uploadDocumentForAutofill(file: File): Promise<DocumentUploadResponse> {
-  let endpoint = process.env.VITE_RECOMMEND_API || import.meta.env.VITE_RECOMMEND_API || "http://localhost:8000";
-  if (endpoint && !endpoint.startsWith("http")) endpoint = `http://${endpoint}`;
-  if (endpoint && endpoint.endsWith("/recommend")) endpoint = endpoint.replace("/recommend", "");
-  if (endpoint && endpoint.endsWith("/")) endpoint = endpoint.slice(0, -1);
-  
-  const formData = new FormData();
-  formData.append("file", file);
+export const uploadDocumentForAutofill = createServerFn({ method: "POST" })
+  .validator((formData: FormData) => formData)
+  .handler(async ({ data: formData }) => {
+    let endpoint = process.env.VITE_RECOMMEND_API || import.meta.env.VITE_RECOMMEND_API || "http://localhost:8000";
+    if (endpoint && !endpoint.startsWith("http")) endpoint = `http://${endpoint}`;
+    if (endpoint && endpoint.endsWith("/recommend")) endpoint = endpoint.replace("/recommend", "");
+    if (endpoint && endpoint.endsWith("/")) endpoint = endpoint.slice(0, -1);
+    
+    const res = await fetch(`${endpoint}/documents/upload`, {
+      method: "POST",
+      body: formData,
+    });
 
-  const res = await fetch(`${endpoint}/documents/upload`, {
-    method: "POST",
-    body: formData,
+    if (!res.ok) {
+      const errorText = await res.text();
+      throw new Error(`Upload failed: ${errorText}`);
+    }
+
+    return (await res.json()) as DocumentUploadResponse;
   });
 
-  if (!res.ok) {
-    const errorText = await res.text();
-    throw new Error(`Upload failed: ${errorText}`);
-  }
-
-  return (await res.json()) as DocumentUploadResponse;
-}

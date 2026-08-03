@@ -19,10 +19,13 @@ export function AutofillUpload({ onUploadComplete }: { onUploadComplete: (data: 
     
     setIsUploading(true);
     try {
-      const response = await uploadDocumentForAutofill(file);
+      const formData = new FormData();
+      formData.append("file", file);
+      const response = await uploadDocumentForAutofill({ data: formData });
       toast.success("Document analyzed successfully!");
       onUploadComplete(response);
     } catch (err) {
+      console.error("[AutofillUpload] Upload error:", err);
       toast.error("Failed to process document. Please try again or fill manually.");
     } finally {
       setIsUploading(false);
