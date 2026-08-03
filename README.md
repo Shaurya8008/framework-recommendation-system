@@ -148,5 +148,6 @@ The framework logic used here comes from the four-part sustainability sequence i
 
 ***
 
-
-
+### Citation notes
+- [1] Attached sustainability framework concept image provided by the user
+- [2] Google Developers recommendation systems overview: https://developers.google.com/machine-learning/recommendation/overview/types

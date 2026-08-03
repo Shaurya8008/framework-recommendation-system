@@ -1,9 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
-import { FRAMEWORKS, STAGES } from "@/lib/frameworks";
+import { STAGES, getFrameworks } from "@/lib/frameworks";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/frameworks/")({
+  loader: async () => {
+    const frameworks = await getFrameworks();
+    return { frameworks };
+  },
   head: () => ({
     meta: [
       { title: "Framework library — ISO, GHG Protocol, GRI, CSRD, SBTi" },
@@ -23,6 +27,8 @@ export const Route = createFileRoute("/frameworks/")({
 });
 
 function FrameworkLibrary() {
+  const { frameworks } = Route.useLoaderData();
+  
   return (
     <div className="min-h-screen">
       <SiteHeader />
@@ -35,7 +41,7 @@ function FrameworkLibrary() {
         <div className="mt-12 space-y-14">
           {STAGES.map((stage) => {
             const Icon = stage.icon;
-            const items = FRAMEWORKS.filter((f) => f.stage === stage.id);
+            const items = frameworks.filter((f) => f.stage === stage.id);
             return (
               <section key={stage.id}>
                 <div className="flex items-center gap-3">
