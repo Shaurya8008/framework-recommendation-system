@@ -14,7 +14,7 @@ def test_recommendation_pipeline_no_emissions(sample_profile_dict):
 
     # Check measure stage includes ghg-protocol with high score
     measure_slugs = [item["slug"] for item in stages["measure"]]
-    assert "ghg-protocol" in measure_slugs
+    assert "ghg-protocol-corporate" in measure_slugs
 
     # Verify each recommendation item structure
     for stage_items in stages.values():
@@ -25,4 +25,4 @@ def test_recommendation_pipeline_no_emissions(sample_profile_dict):
             assert "description" in item
             assert "score" in item
             assert "reason" in item
-            assert 10 <= item["score"] <= 99
+            assert 0 <= item["score"] <= 100

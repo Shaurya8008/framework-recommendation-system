@@ -110,6 +110,9 @@ def normalize_profile(raw: Any) -> NormalizedProfile:
     goals = _get(raw, "sustainability_goals", None) or _get(raw, "goals", None) or []
     if isinstance(goals, str):
         goals = [goals]
+    # Normalize goal slugs: frontend sends hyphens (e.g. "net-zero"),
+    # but scoring/candidate_generation expect underscores ("net_zero").
+    goals = [g.replace("-", "_") for g in goals]
 
     # --- Supply chain ---
     sc = _get(raw, "supply_chain_complexity", "low") or "low"

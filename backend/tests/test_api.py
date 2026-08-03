@@ -10,10 +10,10 @@ def test_list_frameworks(client):
     res = client.get("/frameworks")
     assert res.status_code == 200
     data = res.json()
-    assert len(data) == 16  # All 16 seeded frameworks
+    assert len(data) == 42  # All 42 seeded frameworks
     slugs = [f["slug"] for f in data]
     assert "iso-14001" in slugs
-    assert "ghg-protocol" in slugs
+    assert "ghg-protocol-corporate" in slugs
     assert "csrd" in slugs
 
 

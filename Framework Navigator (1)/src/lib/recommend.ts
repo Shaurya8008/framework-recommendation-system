@@ -130,7 +130,7 @@ async function mockRecommend(p: OrgProfile): Promise<RecommendResponse> {
 
   // MEASURE
   add(
-    "ghg-protocol",
+    "ghg-protocol-corporate",
     p.emissionsMaturity === "none" ? 96 : p.emissionsMaturity === "basic" ? 88 : 70,
     p.emissionsMaturity === "none"
       ? "You are not tracking emissions yet. The GHG Protocol is the starting point — every reporting and target framework you selected depends on this inventory."
@@ -140,14 +140,14 @@ async function mockRecommend(p: OrgProfile): Promise<RecommendResponse> {
   );
   if (p.emissionsMaturity !== "none" && (large || p.disclosure !== "none")) {
     add(
-      "iso-14064",
+      "iso-14064-1",
       64 + (large ? 10 : 0),
       `With ${p.disclosure === "none" ? "an established inventory" : "public disclosure in play"}, third-party verification protects your numbers under scrutiny and assurance requirements.`,
     );
   }
   if (heavy || p.industry === "consumer-goods" || p.industry === "agriculture") {
     add(
-      "lca-iso-14040",
+      "iso-14040",
       58,
       `${p.industry.replace("-", " ")} companies face product-level footprint requests from customers and retailers; LCA is the accepted method.`,
     );
@@ -171,7 +171,7 @@ async function mockRecommend(p: OrgProfile): Promise<RecommendResponse> {
     );
   }
   add(
-    "issb",
+    "ifrs-s1",
     large ? 82 : 58,
     large
       ? "Investor-facing entities of your size are the primary audience for IFRS S1/S2, which is becoming the global disclosure baseline."
@@ -191,7 +191,7 @@ async function mockRecommend(p: OrgProfile): Promise<RecommendResponse> {
   }
   if (large || p.disclosure === "full") {
     add(
-      "cdp",
+      "cdp-climate",
       60,
       "Large buyers and investors commonly cascade CDP questionnaires; a scored response is often a procurement prerequisite.",
     );
@@ -219,7 +219,7 @@ async function mockRecommend(p: OrgProfile): Promise<RecommendResponse> {
   }
   if (goal("renewables") || highEnergy) {
     add(
-      "renewable-energy-plan",
+      "re100",
       highEnergy ? 76 : 62,
       highEnergy
         ? "High electricity consumption means Scope 2 is likely your fastest reduction lever — a sourcing roadmap converts it into a plan."

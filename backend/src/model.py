@@ -59,7 +59,7 @@ class RuleBasedScorer:
                 return 52, "Operational, plant-based work usually means occupational risk. ISO 45001 shares its structure with ISO 14001, so audits can be integrated."
             return 30, "Occupational health and safety standard integrating with environmental governance."
 
-        elif slug == "ghg-protocol":
+        elif slug == "ghg-protocol-corporate":
             if emissions_maturity == "none":
                 return 96, "You are not tracking emissions yet. The GHG Protocol is the starting point — every reporting and target framework depends on this inventory."
             elif emissions_maturity == "basic":
@@ -67,13 +67,13 @@ class RuleBasedScorer:
             else:
                 return 70, "Your inventory is advanced; keep it aligned to the GHG Protocol as your reference methodology for all disclosures."
 
-        elif slug == "iso-14064":
+        elif slug == "iso-14064-1":
             if emissions_maturity != "none" and (large or disclosure != "none"):
                 score = 64 + (10 if large else 0)
                 return min(99, max(10, score)), f"With {('public disclosure in play' if disclosure != 'none' else 'an established inventory')}, third-party verification protects your numbers under scrutiny and assurance requirements."
             return 45, "Standard for GHG quantification and independent verification."
 
-        elif slug == "lca-iso-14040":
+        elif slug == "iso-14040":
             if heavy or industry in ["consumer-goods", "agriculture"]:
                 return 58, f"{industry.replace('-', ' ').title()} companies face product-level footprint requests from customers and retailers; LCA is the accepted method."
             return 35, "Assesses product-level environmental footprint across the full life cycle."
@@ -90,7 +90,7 @@ class RuleBasedScorer:
                 return 90, "For Indian entities, BRSR is the SEBI-prescribed format and BRSR Core attributes require reasonable assurance — align your data collection to it first."
             return 30, "SEBI-prescribed sustainability reporting framework for Indian entities."
 
-        elif slug == "issb":
+        elif slug == "ifrs-s1":
             if large:
                 return 82, "Investor-facing entities of your size are the primary audience for IFRS S1/S2, which is becoming the global disclosure baseline."
             return 58, "ISSB is worth tracking now so your data structure does not need rebuilding when it applies to you."
@@ -106,18 +106,18 @@ class RuleBasedScorer:
                 return score, f"You already report {('publicly and fully' if disclosure == 'full' else 'partially')}, so GRI gives that report a recognised, impact-materiality structure."
             return 55, "GRI Standards offer a comprehensive multi-stakeholder sustainability reporting baseline."
 
-        elif slug == "cdp":
+        elif slug == "cdp-climate":
             if large or disclosure == "full":
                 return 60, "Large buyers and investors commonly cascade CDP questionnaires; a scored response is often a procurement prerequisite."
             return 45, "Annual scored questionnaire widely used by procurement teams and investors."
 
         elif slug == "sbti":
-            if goal("net-zero") or goal("sbti"):
+            if goal("net_zero") or goal("sbti"):
                 return 94, "You selected science-based / net-zero ambitions. SBTi validation is what turns that ambition into a defensible, externally checked target."
             return 50, "SBTi validates near-term and net-zero emissions reduction targets against 1.5°C pathways."
 
         elif slug == "net-zero-standard":
-            if goal("net-zero") or goal("sbti"):
+            if goal("net_zero") or goal("sbti"):
                 return 80, "A net-zero claim needs ~90% deep decarbonisation before neutralisation. This standard defines what you must be able to evidence."
             return 45, "Defines rules for credible corporate net-zero claims."
 
@@ -126,7 +126,7 @@ class RuleBasedScorer:
                 return 70, "You want SDG alignment. Map material activities to specific SDG targets and indicators rather than claiming whole goals."
             return 50, "Shared 17-goal language for framing sustainability strategy and positive impact."
 
-        elif slug == "renewable-energy-plan":
+        elif slug == "re100":
             if goal("renewables") or high_energy:
                 score = 76 if high_energy else 62
                 reason = "High electricity consumption means Scope 2 is likely your fastest reduction lever — a sourcing roadmap converts it into a plan." if high_energy else "You flagged renewable sourcing as a goal; a staged PPA and certificate roadmap makes it auditable."

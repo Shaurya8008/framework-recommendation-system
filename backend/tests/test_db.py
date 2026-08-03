@@ -5,16 +5,16 @@ from app.db.seed import seed_frameworks
 def test_seed_frameworks(db_session):
     # Ensure frameworks are seeded in the fixture
     frameworks = db_session.query(Framework).all()
-    assert len(frameworks) == 16
+    assert len(frameworks) == 42
     slugs = {f.slug for f in frameworks}
     assert "iso-14001" in slugs
-    assert "ghg-protocol" in slugs
+    assert "ghg-protocol-corporate" in slugs
     assert "csrd" in slugs
 
     # Calling seed again should be idempotent
     count = seed_frameworks(db_session)
-    assert count == 16
-    assert db_session.query(Framework).count() == 16
+    assert count == 42
+    assert db_session.query(Framework).count() == 42
 
 
 def test_create_org_profile_and_recommendation(db_session):
