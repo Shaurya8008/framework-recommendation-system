@@ -19,18 +19,7 @@ export function AutofillUpload({ onUploadComplete }: { onUploadComplete: (data: 
     
     setIsUploading(true);
     try {
-      // Read file as base64 so it can be JSON-serialized across the RPC boundary
-      const arrayBuffer = await file.arrayBuffer();
-      const bytes = new Uint8Array(arrayBuffer);
-      let binary = "";
-      for (let i = 0; i < bytes.length; i++) {
-        binary += String.fromCharCode(bytes[i]);
-      }
-      const fileBase64 = btoa(binary);
-
-      const response = await uploadDocumentForAutofill({
-        data: { fileName: file.name, fileBase64 },
-      });
+      const response = await uploadDocumentForAutofill(file);
       toast.success("Document analyzed successfully!");
       onUploadComplete(response);
     } catch (err) {

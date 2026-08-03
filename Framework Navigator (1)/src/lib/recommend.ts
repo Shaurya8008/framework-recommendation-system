@@ -288,35 +288,34 @@ export type DocumentUploadResponse = {
   missing_fields: string[];
 };
 
-export const uploadDocumentForAutofill = createServerFn({ method: "POST" })
-  .validator((d: { fileName: string; fileBase64: string }) => d)
-  .handler(async ({ data }) => {
+// Server function that resolves the backend URL (env var only available on SSR server)
+export const getBackendUrl = createServerFn({ method: "GET" })
+  .handler(async () => {
     let endpoint = process.env.VITE_RECOMMEND_API || "http://localhost:8000";
     if (endpoint && !endpoint.startsWith("http")) endpoint = `http://${endpoint}`;
     if (endpoint && endpoint.endsWith("/recommend")) endpoint = endpoint.replace("/recommend", "");
     if (endpoint && endpoint.endsWith("/")) endpoint = endpoint.slice(0, -1);
-
-    // Reconstruct file from base64 on the server side
-    const binaryStr = atob(data.fileBase64);
-    const bytes = new Uint8Array(binaryStr.length);
-    for (let i = 0; i < binaryStr.length; i++) {
-      bytes[i] = binaryStr.charCodeAt(i);
-    }
-    const blob = new Blob([bytes], { type: "application/pdf" });
-
-    const formData = new FormData();
-    formData.append("file", blob, data.fileName);
-
-    const res = await fetch(`${endpoint}/documents/upload`, {
-      method: "POST",
-      body: formData,
-    });
-
-    if (!res.ok) {
-      const errorText = await res.text();
-      throw new Error(`Upload failed (${res.status}): ${errorText}`);
-    }
-
-    return (await res.json()) as DocumentUploadResponse;
+    return endpoint;
   });
+
+// Client-side function that uploads directly to the backend (avoids RPC serialization of binary data)
+export async function uploadDocumentForAutofill(file: File): Promise<DocumentUploadResponse> {
+  const backendUrl = await getBackendUrl();
+
+  const formData = new FormData();
+  formData.append("file", file);
+
+  const res = await fetch(`${backendUrl}/documents/upload`, {
+    method: "POST",
+    body: formData,
+  });
+
+  if (!res.ok) {
+    const errorText = await res.text();
+    throw new Error(`Upload failed (${res.status}): ${errorText}`);
+  }
+
+  return (await res.json()) as DocumentUploadResponse;
+}
+
 
