@@ -23,10 +23,7 @@ services:
       - key: NODE_VERSION
         value: "22"
       - key: VITE_RECOMMEND_API
-        fromService:
-          type: web
-          name: frameworkfit-backend
-          property: url
+        value: "https://frameworkfit-backend.onrender.com"
 
 databases:
   - name: frameworkfit-db

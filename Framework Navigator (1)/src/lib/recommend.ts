@@ -296,7 +296,10 @@ export const getBackendUrl = createServerFn({ method: "GET" })
     // Render's fromService url property returns internal URLs like
     // "http://frameworkfit-backend:10000" which only work server-to-server.
     // Convert to the public HTTPS URL for client-side use.
-    const renderInternalMatch = endpoint.match(/^https?:\/\/([^:]+):\d+$/);
+    if (endpoint.includes("frameworkfit-backend")) {
+      return "https://frameworkfit-backend.onrender.com";
+    }
+    const renderInternalMatch = endpoint.trim().replace(/\/+$/, "").match(/^https?:\/\/([^:/]+)(?::\d+)?$/);
     if (renderInternalMatch && !endpoint.includes('.') && !endpoint.includes('localhost')) {
       endpoint = `https://${renderInternalMatch[1]}.onrender.com`;
     }
