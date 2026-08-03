@@ -26,7 +26,7 @@ services:
         fromService:
           type: web
           name: frameworkfit-backend
-          property: hostport
+          property: url
 
 databases:
   - name: frameworkfit-db
