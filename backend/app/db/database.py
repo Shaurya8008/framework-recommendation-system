@@ -9,7 +9,10 @@ DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./frameworkfit.db")
 
 # Render's PostgreSQL returns postgres:// but SQLAlchemy 2.0+ requires postgresql://
 if DATABASE_URL.startswith("postgres://"):
-    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql+psycopg2://", 1)
+# If already postgresql://, upgrade to psycopg2 driver (psycopg2-binary is installed)
+elif DATABASE_URL.startswith("postgresql://"):
+    DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+psycopg2://", 1)
 
 connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
 
